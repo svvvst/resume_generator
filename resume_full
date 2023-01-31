@@ -1,8 +1,17 @@
+# Education
+##  B.Eng. Mechanical Engineering
+###  Macaulay Honors College at CUNY The City College of New York
+#### NY, NY / 08/2012 - 01/2017
+GPA: 3.50, *magna cum laude*
+Honors: Tau Beta Pi Engineering Honor Society
+
 # Experience
 
 ##  Radin Consulting, Inc.
+###  Construction Support Coordinator, CTA Red-Purple Modernization Project
+####  Remote / 08/2020 – 02/2021
 ###  Construction Support (C.S.) Coordinator, LIRR 3rd Track Expansion Project
-####  Westbury, NY  / 02/2019 - 02/2021
+####  Westbury, NY  / 02/2019 - 08/2020
 - Leveraged KPI analytics to coordinate multi-disciplinary assortments of teams and meet deadlines for hundreds of product/RFI reviews each month, satisfying design contract; drawing on extensive knowledge of project subject-matter experts, specs, and structure to do so.
 - Facilitated communication between contractors in-field and designers in-office to secure deadlines for hundreds of product/RFI reviews each month, leading to quicker resolution of field problems.
 - Streamlined multi-disciplinary review by 0.8 day avg. with development and implementation of collaborative review process based on employee experience feedback.
@@ -29,7 +38,8 @@
 - Optimized operator experience and improved conveyor accuracy by 170 packages per day by developing Excel VBA algorithm to organize sort layout into equal-volume sets based on monthly statistics.
 - Built comprehensive data model with Jet SQL in MS Access, integrating data from databases, data warehouses, and intranet sites using self-taught SQL, Access, and Power BI skills
 - Provided resources and advice to fellow industrial engineering team members particularly on how to leverage technologies such as MS Excel or Access to simplify rote day-to-day activities and gain access to otherwise-hidden business insights.
-
+###  Industrial Engineering Intern
+#### Uniondale, NY / 10/2017 - 02/18
 
 ## Consolidated Edison, Inc.
 ###  Engineering Design Co-op
@@ -48,3 +58,60 @@
 - Designed conveyor support structure and organized 150+ part assembly in Solidworks
 - Evaluated and revised structural and mechanical integrity of support structure and individual components with Finite Element Analysis in Solidworks Sim. and traditional analytical methods in Excel and MATLAB, while also working with internal structural engineers to ensure compliance with company design guidelines.
 
+# Skills
+## Engineering Software
+- Fusion 360
+- Solidworks
+- AutoCAD Inventor
+- ANSYS Fluent
+- Solidworks Simulation FEA
+- HSMworks
+
+## Data Analysis
+- MS Excel
+- Power BI
+- Power Query M Language
+- MS Access
+- SQL
+
+## Document Management & Office Software
+- Projectwise
+- Oracle Aconex
+- MS Visio
+
+## Mechanical Design
+- 3D Printing
+- Design for Assembly (DFA)
+- Design for Manufacture (DFM)
+- sheet metal design
+- CNC
+- drafting
+- mechanism design
+
+## Programming Languages
+- Microsoft Visual Basic for Applications (VBA), MATLAB, Javascript, Python, C++
+
+## Language
+- Spanish (Conversational)
+
+# Projects
+#  iPhone 6 Plus FEA
+Used Solidworks Simulation to assess validity of 2014 iPhone 6 Plus “Bendgate” scandal. Designed a test rig to measure force applied to phone while sitting. Modeled scenario in Solidworks Simulation FEA and compared to real-world results to assess validity.
+
+## Mechanism Design
+Designed compact, hand-powered retractable “Wolverine” claw toy using Solidworks motion. Conducted kinematic analysis in MATLAB.
+
+## Stirling Engine Design & Manufacture
+Designed and manufactured functioning “low temperature differential” heat engine. Used Solidworks for solid modeling and motion study; CAM setup in HSMworks, followed by CNC for fabrication.
+
+## Heat Sink Design
+Designed, manufactured, and tested heat sink capable of dissipating 30W of heat while maintaining safe processor temperature.
+
+## ANSYS Fluent
+Conducted analysis looking at effect of different nose cone geometries on Tomahawk cruise missile using ANSYS Fluent.
+
+## Rankine Cycle Optimization
+Optimized a hypothetical Rankine Cycle in Microsoft Excel by introducing modifications such as reheating and regeneration.
+
+## Finite Difference Method
+Employed finite difference and Lax methods in MATLAB to visually model vibration of string under uniform tension in 2-D (length, time).
