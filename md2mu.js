@@ -26,7 +26,9 @@ srhExp = /(id=name>.*?)(<\/)/ms;
 html = html.replace(srhExp,`$1${cdata.name}$2`);
 
 html = html.replace('</ content>',res);
-html = html.replace('</ style>', '<style>\n'+css+'\n</style>');
+
+// Insert style in HTML
+//html = html.replace('</ style>', '<style>\n'+css+'\n</style>');
 	
 fs.writeFile(cfg.saveas,html,eh);
 
