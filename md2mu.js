@@ -28,7 +28,7 @@ html = html.replace(srhExp,`$1${cdata.name}$2`);
 html = html.replace('</ content>',res);
 
 // Insert style in HTML
-//html = html.replace('</ style>', '<style>\n'+css+'\n</style>');
+html = html.replace('</ style>', `<link rel="stylesheet" href="${cfg.style}" />`); //'<style>\n'+css+'\n</style>');
 	
 fs.writeFile(cfg.saveas,html,eh);
 
