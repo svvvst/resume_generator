@@ -90,8 +90,13 @@ Honors: Tau Beta Pi Engineering Honor Society
 - mechanism design
 
 ## Programming Languages
-- Microsoft Visual Basic for Applications (VBA), MATLAB, Javascript, Python, C++
-
+- Microsoft Visual Basic for Applications (VBA)
+- MATLAB
+- JavaScript
+- Python
+- C++
+- Linux
+- git
 ## Language
 - Spanish (Conversational)
 
