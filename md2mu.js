@@ -6,7 +6,7 @@ var   showdown = require('showdown');
 function eh(err) { if(err) {return console.log(err);} }
 
 const   converter = new showdown.Converter();
-var   res  = converter.makeHtml(fs.readFileSync('resume_full').toString());
+var   res  = converter.makeHtml(fs.readFileSync(cfg.content).toString());
 var   css  = fs.readFileSync(cfg.style).toString();
 var html = fs.readFileSync(cfg.template).toString();
 var cdata = cfg.contact;
