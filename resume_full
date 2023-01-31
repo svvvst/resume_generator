@@ -1,7 +1,8 @@
-# Education
+#  Education
+
 ##  B.Eng. Mechanical Engineering
 ###  Macaulay Honors College at CUNY The City College of New York
-#### NY, NY / 08/2012 - 01/2017
+####  NY, NY / 08/2012 - 01/2017
 GPA: 3.50, *magna cum laude*
 Honors: Tau Beta Pi Engineering Honor Society
 
@@ -94,8 +95,16 @@ Honors: Tau Beta Pi Engineering Honor Society
 ## Language
 - Spanish (Conversational)
 
-# Projects
-#  iPhone 6 Plus FEA
+#  Projects
+##  Rusyn Wordle
+Developed Wordle game clone in vanilla JavaScript, HTML, and CSS. Utilized PHP and very basic PostgreSQL database to handle backend provision of daily word.
+
+
+##  Trumbeta.me
+Deployed and hosted Mastodon server for minority European language.
+
+
+##  iPhone 6 Plus FEA
 Used Solidworks Simulation to assess validity of 2014 iPhone 6 Plus “Bendgate” scandal. Designed a test rig to measure force applied to phone while sitting. Modeled scenario in Solidworks Simulation FEA and compared to real-world results to assess validity.
 
 ## Mechanism Design
