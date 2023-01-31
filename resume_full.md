@@ -60,6 +60,8 @@ Honors: Tau Beta Pi Engineering Honor Society
 - Evaluated and revised structural and mechanical integrity of support structure and individual components with Finite Element Analysis in Solidworks Sim. and traditional analytical methods in Excel and MATLAB, while also working with internal structural engineers to ensure compliance with company design guidelines.
 
 # Skills
+<div id=skill_container>
+<div class=skillset>
 ## Engineering Software
 - Fusion 360
 - Solidworks
@@ -67,20 +69,26 @@ Honors: Tau Beta Pi Engineering Honor Society
 - ANSYS Fluent
 - Solidworks Simulation FEA
 - HSMworks
+</div>
 
 ## Data Analysis
+<div class=skillset>
 - MS Excel
 - Power BI
 - Power Query M Language
 - MS Access
 - SQL
+</div>
 
 ## Document Management & Office Software
+<div class=skillset>
 - Projectwise
 - Oracle Aconex
 - MS Visio
+</div>
 
 ## Mechanical Design
+<div class=skillset>
 - 3D Printing
 - Design for Assembly (DFA)
 - Design for Manufacture (DFM)
@@ -88,8 +96,10 @@ Honors: Tau Beta Pi Engineering Honor Society
 - CNC
 - drafting
 - mechanism design
+</div>
 
 ## Programming Languages
+<div class=skillset>
 - Microsoft Visual Basic for Applications (VBA)
 - MATLAB
 - JavaScript
@@ -97,8 +107,13 @@ Honors: Tau Beta Pi Engineering Honor Society
 - C++
 - Linux
 - git
+</div>
+
 ## Language
+<div class=skillset>
 - Spanish (Conversational)
+</div>
+</div>
 
 #  Projects
 ##  Rusyn Wordle
