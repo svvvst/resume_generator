@@ -1,4 +1,5 @@
 const fs = require('fs');
+const showdown = require('showdown');
 const cfg = require('./cfg.json');
 
 // dummy err handler
@@ -6,11 +7,14 @@ function eh(err) { if(err) {return console.log(err);} }
 
 const	cdata 		= cfg.contact;
 const   converter 	= new showdown.Converter();
+
+console.log('Importing markdown...');
 const   res  		= converter.makeHtml(fs.readFileSync(cfg.content).toString());
 const   css  		= fs.readFileSync(cfg.style).toString();
 
 var html = fs.readFileSync(cfg.template).toString();
 
+console.log('Formatting html...');
 
 // Header Formatting
 // for each property in obj, create new li tag
@@ -32,8 +36,9 @@ html = html.replace(srhExp,`$1${cdata.name}$2`);
 html = html.replace('</ content>',res);
 
 // Insert style
-html = html.replace('</ style>', `<link rel="stylesheet" href="${cfg.style}" />`); //'<style>\n'+css+'\n</style>');
-	
-fs.writeFile(cfg.saveas,html,eh);
+html = html.replace('</ style>', '<style>\n'+css+'\n</style>'); //`<link rel="stylesheet" href="${cfg.style}" />`); //
 
+console.log("Saving html...");
+fs.writeFile(cfg.saveas,html,eh);
+console.log('html document saved to: ' + cfg.saveas);
 
