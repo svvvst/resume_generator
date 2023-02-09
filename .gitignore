@@ -13,3 +13,6 @@ lerna-debug.log*
 # Node Files
 package.json
 node_modules
+
+# Other Files
+*.old
