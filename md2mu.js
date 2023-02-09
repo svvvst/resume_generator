@@ -1,6 +1,5 @@
 const fs = require('fs');
 const cfg = require('./cfg.json');
-var   showdown = require('showdown');
 
 // dummy err handler
 function eh(err) { if(err) {return console.log(err);} }
