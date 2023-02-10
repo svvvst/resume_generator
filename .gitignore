@@ -7,8 +7,9 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-# Generated PDFs
+# Generated files
 *.pdf
+*resume*.html
 
 # Node Files
 package.json
