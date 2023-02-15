@@ -42,8 +42,6 @@ Honors: Tau Beta Pi Engineering Honor Society
 - Conducted surveys of end-users and interviews of stakeholders to gather insights, which were then translated into actionable project specifications to ensure project and goals met user needs and aligned with business strategy.
 
 # Skills
-<div id=skill_container>
-<div class=skillset>
 ## Engineering Software
 - Fusion 360
 - Solidworks
@@ -51,26 +49,20 @@ Honors: Tau Beta Pi Engineering Honor Society
 - ANSYS Fluent
 - Solidworks Simulation FEA
 - HSMworks
-</div>
 
 ## Data Analysis
-<div class=skillset>
 - MS Excel
 - Power BI
 - Power Query M Language
 - MS Access
 - SQL
-</div>
 
 ## Document Management & Office Software
-<div class=skillset>
 - Projectwise
 - Oracle Aconex
 - MS Visio
-</div>
 
 ## Mechanical Design
-<div class=skillset>
 - 3D Printing
 - Design for Assembly (DFA)
 - Design for Manufacture (DFM)
@@ -78,10 +70,8 @@ Honors: Tau Beta Pi Engineering Honor Society
 - CNC
 - drafting
 - mechanism design
-</div>
 
 ## Programming Languages
-<div class=skillset>
 - Microsoft Visual Basic for Applications (VBA)
 - MATLAB
 - JavaScript
@@ -89,13 +79,9 @@ Honors: Tau Beta Pi Engineering Honor Society
 - C++
 - Linux
 - git
-</div>
 
 ## Language
-<div class=skillset>
 - Spanish (Conversational)
-</div>
-</div>
 
 #  Projects
 ##  Rusyn Wordle

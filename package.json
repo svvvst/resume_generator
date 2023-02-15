@@ -1,0 +1,24 @@
+{
+  "name": "resume_html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "md2mu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svvvst/resume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svvvst/resume/issues"
+  },
+  "homepage": "https://github.com/svvvst/resume#readme",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "puppeteer": "^19.6.3",
+    "showdown": "^2.1.0"
+  }
+}

@@ -1,3 +1,4 @@
+// Scrap Code Below
 // get property from str 
 function returnProperty(obj,propertyStr)
 {
