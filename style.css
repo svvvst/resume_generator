@@ -121,13 +121,24 @@ p, ul
 }
 
 /* Containers (skills, projects, etc.) */
-.container li:not(*:last-child)::after {
+.container
+{
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(20%,1fr));
+}
+
+.container-child ul
+{
+    padding: 0;
+}
+
+.container li:not(*:last-child)::after
+{
     content: ', ';
 }
-.container li {
+
+.container li
+{
     display: inline;
-}
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
