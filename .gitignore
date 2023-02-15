@@ -9,10 +9,9 @@ lerna-debug.log*
 
 # Generated files
 *.pdf
-resume.html
+*resume*.html
 
 # Node Files
-package.json
 node_modules
 
 # Other Files
