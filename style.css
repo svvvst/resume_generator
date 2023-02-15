@@ -21,7 +21,6 @@ body,
 
 #page
 {
-    height:  11in;
     width:   8.5in;
     padding: 0.5in;
     
@@ -119,4 +118,16 @@ p, ul
     
     text-align: right;
     flex-basis:1;
+}
+
+/* Containers (skills, projects, etc.) */
+.container li:not(*:last-child)::after {
+    content: ', ';
+}
+.container li {
+    display: inline;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

@@ -25,5 +25,26 @@
 				</ content>
 			</div>
 		</div>
+	<script>
+		function containerize(sectionName)
+		{
+			const sectContainer = document.createElement('div');
+			sectContainer.classList.add(sectionName,'container');
+			document.querySelector('#'+sectionName).insertAdjacentElement('afterEnd',sectContainer);
+
+			const skillLists = document.querySelectorAll('#'+sectionName+' ~ ul');   
+
+			for (let i = 0; i < skillLists.length; i += 1)
+			{
+				const containerChild = document.createElement('div');        
+				containerChild.classList.add('container-child');
+				containerChild.appendChild(skillLists[i].previousElementSibling);
+				containerChild.appendChild(skillLists[i]);
+
+				sectContainer.insertAdjacentElement('beforeEnd',containerChild);                 
+			}
+		}
+		containerize('skills');
+	</script>
 	</body>
 </html>
