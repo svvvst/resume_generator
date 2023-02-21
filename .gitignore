@@ -16,5 +16,5 @@ node_modules
 
 # Other Files
 *.old
-*.vscode
+.vscode/*
 *.vim
