@@ -18,3 +18,5 @@ node_modules
 *.old
 .vscode/*
 *.vim
+worktrees/
+.wt/
