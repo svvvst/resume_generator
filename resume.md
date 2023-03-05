@@ -90,8 +90,15 @@ Honors: Tau Beta Pi Engineering Honor Society
 
 #  Projects
 ##  Rusyn Wordle
-Developed Wordle game clone in vanilla JavaScript, HTML, and CSS. Utilized PHP and very basic PostgreSQL database to handle backend provision of daily word.
+Responsive web-app game featuring an on-screen Cyrillic keyboard for user input and an adaptable backend JavaScript (JS) class interface for configurable board length and difficulty levels. The game incorporates an entire object model that supports all game functionality, including scoring, and game state management.
 
+To ensure the confidentiality of the "secret" word list, a secure query was implemented to retrieve a daily word from a simple PostgreSQL database without revealing the entire list of words to end-users. The database also allows for easy management and updating of the word list.
+
+Rusyn Wordle showcases proficiency in front-end development with HTML5, JavaScript, and CSS, as well as back-end development skills with server-side scripting and database management. The project demonstrates the ability to develop and deploy a fully-functional web application with modern web technologies while taking into account user-centered design principles. 
 
 ##  Trumbeta.me
-Deployed and hosted Mastodon server for minority European language.
+Trumbeta.me is a Mastodon server that was deployed and hosted for a minority European language. The project involved configuring the server to meet the requirements of the Mastodon platform, installing and updating software packages using package managers such as apt, npm, and Gems, and monitoring the server's performance using tools such as top, iotop, and htop.
+
+The project also involved utilizing scripting languages such as Bash to automate server maintenance tasks, manage the Mastodon instance, and interact with the server remotely using SSH. Tools such as systemd and crontab were used to manage services and schedule recurring tasks. Vim was used as the primary text editor for modifying configuration files and scripts.
+
+Additionally, Docker was used to manage the Mastodon instance and its dependencies in a containerized environment, providing greater flexibility and portability. Trumbeta.me demonstrates technical expertise in server administration, Linux command-line interface, shell scripting, and remote development, as well as a commitment to promoting and supporting linguistic diversity and cultural preservation through technology.
