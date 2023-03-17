@@ -24,19 +24,31 @@ Honors: Tau Beta Pi Engineering Honor Society
 - Leveraged KPI analytics to coordinate a cross-functional assortment of teams to meet deadlines for hundreds of product/RFI reviews each month, satisfying design contract; drawing on extensive knowledge of project subject-matter experts, specs, and structure to do so.
 - Built VBA recommendation algorithm that reduced submittal distribution time from 12 to 3 min. avg. by parsing email keywords with RegEx, then applying boolean algebra prescribed in config file.
 - Cut document management process from 10 minute to 2 minute average with VBA and JavaScript programming; scraping the web-based document system, sorting files, adding data to local database.
-
+- Facilitated communication between contractors in-field and designers in-office to secure deadlines for hundreds of product/RFI reviews each month, leading to quicker resolution of field problems.
+- Streamlined multi-disciplinary review by 0.8 day avg. with development and implementation of collaborative review process based on employee experience feedback.
+- Identified and resolved issues during the review process, and coordinated with various teams and contractors to do so.
+- Documented and published aforementioned organizational knowledge to facilitate more direct communication between teams, increase adherence to review guidelines, and accelerate onboarding of fellow C.S. team members.
+- Maintained Projectwise document database throughout project lifecycle, filing shop drawings, RFIs, and other construction-related documentation.
+- Negotiated RFI costs with contractors at monthly meetings.
 
 ##  United Parcel Service, Inc.
 ###  Industrial Engineer
 ####  Melville, NY | 09/2017 - 02/2019
 
-- Deployed new automated conveyor system and conducted root cause analyses based on data and in-field research to resolve numerous scanning and mechanical issues with new conveyor system; coordinating with plant engineering, corporate technology group, and OEM.
 - Improved conveyor accuracy by 170 packages per day by developing Excel VBA algorithm to organize sort layout into equal-volume sets based on monthly statistics.
 - Developed daily, monthly, and yearly projections based on historical service demand and past operational performance metrics, applying basic statistical analysis in the process: linear regressions, fast Fourier transform, simple moving averages, standard deviation, etc.
+- Developed daily operating plans for projected daily operation performance/staffing requirements based on basic statistical analysis of historical service demand and operational performance metrics: linear regressions, sinusoidal regressions, moving averages, standard deviation, variance, etc.
 - Created Power BI dashboard to visualize real-time trailer volumes from queried scan data. 
 - Authored report on tardy package arrival causes, employing data from Oracle database to pinpoint late-arriving accounts and revise pickup schedules, pushing operational peak volume back 40 minutes.
 - Built comprehensive data model with Jet SQL in MS Access, integrating data from databases, data warehouses, and intranet sites using self-taught SQL, Access, and Power BI skills
 - Provided resources and advice to fellow industrial engineering team members regarding how to leverage technologies such as MS Excel or Access to simplify rote day-to-day activities and gain access to otherwise-hidden business insights.
+- Deployed new automated conveyor system and conducted root cause analyses based on data and in-field research to resolve numerous scanning and mechanical issues with new conveyor system; coordinating with plant engineering, corporate technology group, and OEM.
+- Investigated service failure incidents and carried out root cause analysis, relying on scan data and personal knowledge of internal methods/processes to support operations’ in meeting operational excellence business requirements and KPIs.
+- Supported operations team regularly by responding to ad-hoc requests for coordination with other business divisions, resolution of IT or scan issues, explanation of technical aspects of UPS network, KPI reporting, etc.
+- Developed operation manual and trained team on procedures for new, automated conveyor including daily setup, area maintenance, safety, and staffing procedures.
+- Wrote and rolled out special operating plans for new Saturday sort operation, working closely with hub and package operations groups.
+- Identified root causes and resolved numerous automated scanning and mechanical issues with new conveyor system with assistance from plant engineering, corporate technology group, and OEM.
+- Optimized operator experience and improved conveyor accuracy by 170 packages per day by developing Excel VBA algorithm to organize sort layout into equal-volume sets based on monthly statistics.
 
 ###  Industrial Engineering Intern
 #### Uniondale, NY | 10/2017 - 02/18
@@ -45,12 +57,24 @@ Honors: Tau Beta Pi Engineering Honor Society
 ## Consolidated Edison, Inc.
 ###  Engineering Design Co-op
 ####  New York, NY | 01/2016 - 12/2016
-
+- Managed design team and development of $65,000 conveyor: set schedule, assigned tasks, reviewed team members' progress, etc.
+- Conducted academic and industry research through review of publications and interviews with industry professionals to evaluate the feasibility and potential benefits of several solutions.
+- Evaluated project feasibility based on prototype design, draft bill of materials, projected costs, projected product performance, and estimated man-hours for construction.
 - Compiled data, conducted cost-benefit analysis, and determined ROI by using metrics collected on employee injuries, typical man-hour/overtime costs, and evaluating these against projected post-implementation improvements to process and health/safety to.
 - Conducted surveys of end-users and interviews of stakeholders to gather insights, which were then translated into actionable project specifications to ensure project and goals met user needs and aligned with business strategy.
+- Improved operator safety through user-centric and ergonomic design practices, designing a user-friendly experience for end-users which aligned with client focus on safety.
+- Assessed products and materials (AC motors, variable frequency drives, gearboxes, etc.) against project specifications and requirements.
+- Sourced and procured components from vendors, distributors, and in-house fabricator.
+- Drafted comprehensive shop drawings and collaborated with internal fabrication team to determine fabrication capabilities and ensure accurate communication of design intent in drawings.
+- Collaborated with site electrical planners and electrical engineers to design electrical access and a power supply system that met product specifications and needs of motor, variable frequency drive, various safety features, and other components.
+- Ensured project success by leveraging resources and knowledge from across the organization, including: management, site planning, machine shop, health/safety, and end-users.
+- Designed conveyor support structure and organized 150+ part assembly in Solidworks
+- Evaluated and revised structural and mechanical integrity of support structure and individual components with Finite Element Analysis in Solidworks Sim. and traditional analytical methods in Excel and MATLAB, while also working with internal structural engineers to ensure compliance with company design guidelines.
 
 
 # Skills
+
+## Engineering Software
 - Fusion 360
 - Solidworks
 - AutoCAD Inventor
@@ -64,9 +88,13 @@ Honors: Tau Beta Pi Engineering Honor Society
 - Power Query M Language
 - MS Access
 - SQL
+
+## Document Management & Office Software
 - Projectwise
 - Oracle Aconex
 - MS Visio
+
+## Mechanical Design
 - 3D Printing
 - Design for Assembly (DFA)
 - Design for Manufacture (DFM)
@@ -74,7 +102,6 @@ Honors: Tau Beta Pi Engineering Honor Society
 - CNC
 - drafting
 - mechanism design
-- MS Excel
 
 ## Data Visualization
 - PowerBI
@@ -84,15 +111,11 @@ Honors: Tau Beta Pi Engineering Honor Society
 - Microsoft Visual Basic for Applications (VBA)
 - MATLAB
 - JavaScript
-- NodeJS
 - Python
 - C++
-- Microsoft Visual Basic for Applications (VBA)
-- MATLAB
-
-## Technical Skills 
 - Linux
 - git
+
 ## Language
 - Spanish (Conversational)
 
