@@ -74,6 +74,41 @@ Honors: Tau Beta Pi Engineering Honor Society
 - Evaluated and revised structural and mechanical integrity of support structure and individual components with Finite Element Analysis in Solidworks Sim. and traditional analytical methods in Excel and MATLAB, while also working with internal structural engineers to ensure compliance with company design guidelines.
 
 
+#  Projects
+
+##  Rusyn Wordle
+Developed and deployed a responsive word game web-app featuring interactive game board and Cyrillic keyboard interface. The project showcases proficiency in front-end development using HTML5, JavaScript, and CSS, as well as basic back-end development and database management skills. Git was employed extensively for revision tracking and bug fixes.
+
+Rusyn Wordle implements a modular object model for all game functions, including a configurable game board class that allow adjustable board size and difficulty level. A SQL query was implemented with PHP to retrieve a single new word daily for all users across the globe from a PostgreSQL database without revealing the word list to end-users.
+
+##  Trumbeta.me
+Trumbeta.me is a Mastodon server marketed towards speakers of a minority European language. The project demonstrates technical expertise in Linux administration, shell scripting, and remote development.
+
+The project involved installing, configuring, and managing an entire Ubuntu software stack including Ruby, PostgreSQL, and nginx. The project also required utilizing scripting languages such as Bash and Ruby to automate server maintenance tasks, along with CLI tools such as systemd and crontab.
+
+
+##  iPhone 6 Plus FEA
+Used Solidworks Simulation to assess validity of 2014 iPhone 6 Plus “Bendgate” scandal. Designed a test rig to measure force applied to phone while sitting. Modeled scenario in Solidworks Simulation FEA and compared to real-world results to assess validity.
+
+## Mechanism Design
+Designed compact, hand-powered retractable “Wolverine” claw toy using Solidworks motion. Conducted kinematic analysis in MATLAB.
+
+## Stirling Engine Design & Manufacture
+Designed and manufactured functioning “low temperature differential” heat engine. Used Solidworks for solid modeling and motion study; CAM setup in HSMworks, followed by CNC for fabrication.
+
+## Heat Sink Design
+Designed, manufactured, and tested heat sink capable of dissipating 30W of heat while maintaining safe processor temperature.
+
+## ANSYS Fluent
+Conducted analysis looking at effect of different nose cone geometries on Tomahawk cruise missile using ANSYS Fluent.
+
+## Rankine Cycle Optimization
+Optimized a hypothetical Rankine Cycle in Microsoft Excel by introducing modifications such as reheating and regeneration.
+
+## Finite Difference Method
+Employed finite difference and Lax methods in MATLAB to visually model vibration of string under uniform tension in 2-D (length, time).
+
+
 # Skills
 
 ## Engineering Software
@@ -124,38 +159,3 @@ Honors: Tau Beta Pi Engineering Honor Society
 
 ## Language
 - Spanish (Conversational)
-
-
-#  Projects
-
-##  Rusyn Wordle
-Developed and deployed a responsive word game web-app featuring interactive game board and Cyrillic keyboard interface. The project showcases proficiency in front-end development using HTML5, JavaScript, and CSS, as well as basic back-end development and database management skills. Git was employed extensively for revision tracking and bug fixes.
-
-Rusyn Wordle implements a modular object model for all game functions, including a configurable game board class that allow adjustable board size and difficulty level. A SQL query was implemented with PHP to retrieve a single new word daily for all users across the globe from a PostgreSQL database without revealing the word list to end-users.
-
-##  Trumbeta.me
-Trumbeta.me is a Mastodon server marketed towards speakers of a minority European language. The project demonstrates technical expertise in Linux administration, shell scripting, and remote development.
-
-The project involved installing, configuring, and managing an entire Ubuntu software stack including Ruby, PostgreSQL, and nginx. The project also required utilizing scripting languages such as Bash and Ruby to automate server maintenance tasks, along with CLI tools such as systemd and crontab.
-
-
-##  iPhone 6 Plus FEA
-Used Solidworks Simulation to assess validity of 2014 iPhone 6 Plus “Bendgate” scandal. Designed a test rig to measure force applied to phone while sitting. Modeled scenario in Solidworks Simulation FEA and compared to real-world results to assess validity.
-
-## Mechanism Design
-Designed compact, hand-powered retractable “Wolverine” claw toy using Solidworks motion. Conducted kinematic analysis in MATLAB.
-
-## Stirling Engine Design & Manufacture
-Designed and manufactured functioning “low temperature differential” heat engine. Used Solidworks for solid modeling and motion study; CAM setup in HSMworks, followed by CNC for fabrication.
-
-## Heat Sink Design
-Designed, manufactured, and tested heat sink capable of dissipating 30W of heat while maintaining safe processor temperature.
-
-## ANSYS Fluent
-Conducted analysis looking at effect of different nose cone geometries on Tomahawk cruise missile using ANSYS Fluent.
-
-## Rankine Cycle Optimization
-Optimized a hypothetical Rankine Cycle in Microsoft Excel by introducing modifications such as reheating and regeneration.
-
-## Finite Difference Method
-Employed finite difference and Lax methods in MATLAB to visually model vibration of string under uniform tension in 2-D (length, time).
