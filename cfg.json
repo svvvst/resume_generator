@@ -17,5 +17,11 @@
 	{
 		"saveas":	"resume.pdf",
 		"pagesize":	"Letter"
+	},
+
+	"substitutions":
+	{
+		"COMPANY_NAME":"Salesforce",
+		"POSITION":"Software Engineering MTS role"
 	}
 }
