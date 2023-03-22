@@ -22,9 +22,9 @@ Honors: Tau Beta Pi Engineering Honor Society
 
 - Leveraged analytics to coordinate a cross-functional assortment of teams and meet deadlines for hundreds of design reviews each month.
 - Cut document management process from 10 minute to 2 minute average with VBA and JavaScript programming thru scraping the online document system, adding data and files to local database with ProjectWise API.
-- Built VBA email recipient recommendation algorithm to reduce submittal distribution time from 12 to 3 min. avg. by parsing emails with RegEx, then applying boolean algebra per config file.
-- Designed and leveraged a visual approach with Excel, Power BI, and Power Query Formula Language to communicate complex technical ideas and performance trends to stakeholders.
-- Documented and published personal knowledge of project structure and procedures to facilitate communication between teams, increase adherence to review procedures, and accelerate onboarding of fellow team members.
+- Built email recipient recommendation algorithm to reduce submittal distribution time from 12 to 3 min. thru RegEx email parser and boolean algebra in config file.
+- Published personal knowledge of project structure and procedures to facilitate communication between teams, increase adherence to review procedures, and accelerate onboarding of fellow team members.
+- Leveraged Power BI and Power Query Formula Language to communicate complex ideas visually to stakeholders.
 
 
 ##  United Parcel Service, Inc.
@@ -33,7 +33,7 @@ Honors: Tau Beta Pi Engineering Honor Society
 
 - Deployed new automated conveyor system; coordinating with plant engineering, corporate technology group, and OEM.
 - Conducted package flow modeling with Excel VBA to optimize automated conveyor and improve user experience by sorting conveyor layout into equal-volume sets based on queried historical metrics.
-- Built comprehensive Jet SQL data model in MS Access, applying self-taught skills to collect data from databases and other sources, facilitating more complex reporting and in-depth investigations.
+- Built comprehensive Jet SQL data model in MS Access, applying self-taught skills to integrate data from several disconnected databases. 
 - Transformed data from Oracle database to ID late-arriving package accounts, author report on tardy package arrival causes, then revise pickup schedules.
 - Performed demand assessments and projections for operations planning based on historical performance data; applying statistical methods such as: linear regressions, fast Fourier transform, SMAs, std. dev., etc.
 - Conducted root cause analyses of service failure incidents based on data and in-field research to resolve numerous scanning and mechanical bugs in new conveyor system
@@ -47,20 +47,19 @@ Honors: Tau Beta Pi Engineering Honor Society
 ####  New York, NY • 01/2016 - 12/2016
 - Managed design of $65,000 conveyor: set schedule, assigned tasks, reviewed team members' progress, etc.
 - Collected and collated data from end-user surveys and stakeholder interviews to support project planning, then translated these into actionable project specifications, ensuring the project and its goals met user needs and aligned with business strategy.
-- Compiled data, conducted cost-benefit analysis, assessed ROI, and determined project feasibility based on employee injuries, and typical hourly/overtime costs, then evaluated these against projected, post-implementation improvements to process and health/safety.
 
 
 #  Projects
 
 ##  Rusyn Wordle
-Developed and deployed a responsive word game web-app featuring interactive game board and on-screen Cyrillic keyboard interface. The project showcases proficiency in front-end development using HTML5, JavaScript, and CSS, as well as basic back-end development and database management skills. Git was employed extensively for revision tracking and addressing bug fixes.
+Developed and deployed responsive word game web-app featuring interactive game board and on-screen Cyrillic keyboard. Showcases of proficiency in front-end development with HTML5, JavaScript, and CSS, plus basic back-end development and database management skills with PostgreSQL and PHP. Git employed extensively for revision tracking and sourcing bug from community.
 
-Rusyn Wordle implements a modular object model for all game functions, including a configurable game board class that allow adjustable board size and difficulty level. A SQL query was implemented with PHP to retrieve a single new word daily for all users across the globe from a PostgreSQL database without revealing the word list to end-users.
+Utilizes modular object model including an extensive config file and configurable game board class allowing adjustable board size and difficulty level. A SQL query was implemented in PHP to retrieve a new daily word simultaneously for users across the globe from a PostgreSQL database, preventing viewing of the whole list via user dev console.
 
 ##  Trumbeta.me
-Trumbeta.me is a Mastodon server marketed towards speakers of a minority European language. The project demonstrates technical expertise in Linux administration, shell scripting, and remote development.
+Digital Ocean-hosted Mastodon server marketed towards speakers of minority European language. Applied technical expertise in Linux administration, shell scripting, and remote development.
 
-The project involved installing, configuring, and managing an entire Ubuntu software stack including Ruby, PostgreSQL, and nginx. The project also required utilizing scripting languages such as Bash and Ruby to automate server maintenance tasks, along with CLI tools such as systemd and crontab.
+Installed, configured, and managed entire Ubuntu software stack including Ruby, PostgreSQL,a nginx. Utilized scripting languages, e.g. Bash and Ruby, to automate server maintenance, along with CLI tools i.e. crontab.
 
 
 # Skills
