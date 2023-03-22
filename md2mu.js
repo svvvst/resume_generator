@@ -10,7 +10,18 @@ const   converter 	= new showdown.Converter();
 
 console.log('Importing markdown...');
 let   res  		= converter.makeHtml(fs.readFileSync(cfg.content).toString());
-const   css  		= fs.readFileSync(cfg.style).toString();
+const   css  		= ((paths)=>
+{
+	let style ="";
+	for (let path of paths)
+	{
+		try 
+			{style += fs.readFileSync(path).toString();}
+		catch 
+			{console.log(`! Style '${path}' not found.`);}
+	}
+	return style;
+})(cfg.style)
 
 var html = fs.readFileSync(cfg.template).toString();
 
