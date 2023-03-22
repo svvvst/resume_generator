@@ -15,38 +15,34 @@ Honors: Tau Beta Pi Engineering Honor Society
 # Experience
 
 ##  Radin Consulting, Inc.
-###  Construction Support Coordinator, CTA Red-Purple Modernization Project
+###  Construction Support (C.S.), CTA Red-Purple Modernization Project
 ####  Remote • 08/2020 – 02/2021
-###  Construction Support (C.S.) Coordinator, LIRR 3rd Track Expansion Project
+###  C.S. Coordinator, LIRR 3rd Track Expansion Project
 ####  Westbury, NY • 02/2019 - 08/2020
 
 - Leveraged KPI analytics to coordinate a multi-disciplinary assortment of teams and secure deadlines for hundreds of design reviews each month.
+- Cut document management process from 10 minute to 2 minute average with VBA and JavaScript programming thru scraping online document system, adding data and files to local database with ProjectWise API.
 - Designed and applied a graphical and visual approach to communicate complex technical ideas and performance trends to stakeholders using Excel, Power BI, and Power Query Formula Language, revealing data-based process optimization opportunities. 
 - Documented knowledge of design teams' structure and procedures to facilitate communication between teams, increase adherence to review procedures, and accelerate onboarding team members.
-- Built recommendation algorithm in VBA that reduced submittal distribution time from 12 to 3 min. avg. by parsing email keywords with RegEx, then applying boolean algebra per config file.
-- Cut document management process from 10 minute to 2 minute average with VBA and JavaScript programming; scraping the web-based document system, sorting files, adding data to local database, and interfacing with ProjectWise API to upload files.
-
+- Built email recipient recommendation algorithm in VBA to reduce submittal distribution time from 12 to 3 min. avg. thru RegEx email parsing and applying boolean algebra from config file.
+- Communicated complex ideas visually to stakeholders with Power BI and Power Query Formula Language.
 
 
 ##  United Parcel Service, Inc.
 ###  Industrial Engineer
 ####  Melville, NY • 09/2017 - 02/2019
 
-- Built comprehensive Jet SQL data model in MS Access using self-taught skills to collect data from Oracle databases, data warehouses, and intranet sites; facilitating more complex reporting and in-depth investigations.
-- Transformed data from Oracle database to pinpoint late-arriving package accounts, authored report on tardy package arrival causes, then proposed revised pickup schedules for high-volume, local accounts as a possible solution.
 - Deployed new automated conveyor system and conducted root cause analyses based on data and in-field research to resolve numerous scanning and mechanical issues with new conveyor system; coordinating with plant engineering, corporate technology group, and OEM.
-- Improved conveyor accuracy by 170 packages per day by developing Excel VBA algorithm to organize sort layout into equal-volume sets based on monthly statistics.
-- Created Power BI dashboard to visualize real-time trailer volumes from queried scan data. 
-- Provided resources and advice to fellow industrial engineering team members regarding how to leverage technologies such as MS Excel or Access to simplify rote day-to-day activities and gain access to otherwise-hidden business insights.
-- Performed capacity/demand assessments and projections for operations planning based on historical performance data using basic statistical methods such as: linear regressions, fast Fourier transform, simple moving averages, standard deviation, etc.
-- Conducted package flow simulation modeling with Excel VBA to optimize automated conveyor and improve operator accuracy; developing an algorithm that organized conveyor layout into equal-volume sets based on historical metrics.
+- Improved conveyor accuracy by 170 packages per day by developing Excel VBA package flow modeling algorithm to organize conveyor layout into equal-volume sets based on queried historical metrics.
+- Conducted root cause analyses of service failure incidents based on data and in-field research to resolve numerous IT and mechanical bugs in new conveyor system.
 - Developed operation manual for automated smalls sort including daily setup, area maintenance, safety, and staffing procedures.
 - Worked side-by-side with operators to train personnel on corporate conveyor operations methodology, safety and maintenance.
-- Collected data on, analyzed, identified root causes of, and resolved numerous scanning and mechanical conveyor system bugs.
 - Wrote Special Operating Plan for and deployed new Saturday morning sort operation, working closely with hub and package operations groups.
-- Built comprehensive Jet SQL data model in MS Access using self-taught skills to collect data from databases, data warehouses, and intranet sites; and to improve understanding of corporate network and facilitate more complex reporting and investigations.
-- Transformed data from Oracle database to pinpoint late-arriving package accounts, authored report on tardy package arrival causes, then proposed revised pickup schedules for high-volume, local accounts as a possible solution.
-- Deployed revised pickup schedules, pushing operational peak volume back 40 minutes.
+- Built comprehensive Jet SQL data model in MS Access, applying self-taught skills to integrate data from several disconnected databases, data warehouses, and intranet sites; facilitating more complex reporting and in-depth investigations.
+- Transformed data from Oracle database to pinpoint late-arriving package accounts, authored report on tardy package arrival causes, then proposed revised pickup schedules for high-volume, local accounts as a possible solution, pushing operational peak volume back 40 minutes.
+- Performed demand assessments and projections for operations planning based on historical performance data; applying statistical methods such as: linear regressions, fast Fourier transform, SMAs, std. dev., etc.
+- Acted as SME for industrial engineering team members on how to leverage technologies such as MS Excel or Access to automate reports & day-to-day activities and gain access to otherwise-hidden business insights.
+- Created Power BI dashboard to visualize real-time trailer volumes from queried scan data. 
 
 
 ###  Industrial Engineering Intern
@@ -66,19 +62,16 @@ Honors: Tau Beta Pi Engineering Honor Society
 
 
 #  Projects
+
 ##  Rusyn Wordle
+Developed and deployed responsive word game web-app featuring interactive game board and on-screen Cyrillic keyboard. Showcases of proficiency in front-end development with HTML5, JavaScript, and CSS, plus basic back-end development and database management skills with PostgreSQL and PHP. Git employed extensively for revision tracking and sourcing bug from community.
 
-Developed and deployed a responsive word game web-app featuring interactive game board and Cyrillic keyboard interface. The project showcases proficiency in front-end development using HTML5, JavaScript, and CSS, as well as basic back-end development and database management skills. Git was employed extensively for revision tracking and bug fixes.
-
-Rusyn Wordle implements a modular object model for all game functions, including a configurable game board class that allow adjustable board size and difficulty level. A SQL query was implemented with PHP to retrieve a single new word daily for all users across the globe from a PostgreSQL database without revealing the word list to end-users.
-
+Utilizes modular object model including an extensive config file and configurable game board class allowing adjustable board size and difficulty level. A SQL query was implemented in PHP to retrieve a new daily word simultaneously for users across the globe from a PostgreSQL database, preventing viewing of the whole list via user dev console.
 
 ##  Trumbeta.me
+Digital Ocean-hosted Mastodon server marketed towards speakers of minority European language. Applied technical expertise in Linux administration, shell scripting, and remote development.
 
-Trumbeta.me is a Mastodon server marketed towards speakers of a minority European language. The project demonstrates technical expertise in Linux administration, shell scripting, and remote development.
-
-The project involved installing, configuring, and managing an entire Ubuntu software stack including Ruby, PostgreSQL, and nginx. The project also required utilizing scripting languages such as Bash and Ruby to automate server maintenance tasks, along with CLI tools such as systemd and crontab.
-
+Installed, configured, and managed entire Ubuntu software stack including Ruby, PostgreSQL, nginx. Utilized scripting languages, e.g. Bash and Ruby, to automate server maintenance, along with CLI tools i.e. crontab.
 
 
 # Skills
@@ -99,8 +92,8 @@ The project involved installing, configuring, and managing an entire Ubuntu soft
 
 ## Technical Skills 
 - PowerShell
-- bash
 - Linux
+- bash
 - git
 
 
