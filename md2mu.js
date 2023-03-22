@@ -16,9 +16,13 @@ const   css  		= ((paths)=>
 	for (let path of paths)
 	{
 		try 
-			{style += fs.readFileSync(path).toString();}
+		{
+			style += fs.readFileSync(path).toString();
+		}
 		catch 
-			{console.log(`! Style '${path}' not found.`);}
+		{
+			console.log(`! Style '${path}' not found.`);
+		}
 	}
 	return style;
 })(cfg.style)

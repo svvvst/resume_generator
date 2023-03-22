@@ -7,23 +7,23 @@
 
 .container-child *
 {
-	padding:-1px;
-	margin:	-1px;
+	padding:0px;
+	margin:	0px;
 }
 
-.container-child h1,
+.container-child h2,
 .container-child ul {
     display: inline-block;
 }
 
-.container-child h1::after {
+.container-child h2::after {
     content: ": ";
     display:inline-block;
-    width:-1.5em;
+    width:0.5em;
 }
 
 .container li:last-child::after {
     content: "";
     display: inline-block;
-    width: 0em;
+    width: 1em;
 }
