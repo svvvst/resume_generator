@@ -1,6 +1,6 @@
 # Objective
 
-Results-driven engineer with strong background in data analysis, user experience, and programming, seeking to transition to formal programmer role. Alexander has demonstrated proficiency in multiple programming languages, including NodeJS, Python, C++, SQL, and VBA; as well as experience working in both Windows and \*nix environments. The {{POSITION}} at {{COMPANY_NAME}} offers the perfect opportunity to apply both his programming abilities and skill in adapting to multi-disciplinary scenarios. 
+Results-driven engineer with strong background in data analysis, process management, and programming, seeking to transition to formal programmer role. Alexander has demonstrated proficiency in multiple programming languages, including NodeJS, Python, C++, SQL, and VBA; as well as experience working in both Windows and \*nix environments. The {{POSITION}} at {{COMPANY_NAME}} offers the perfect opportunity to apply both his programming abilities and skill in adapting to multi-disciplinary scenarios. 
 
 
 #  Education
@@ -33,10 +33,10 @@ Honors: Tau Beta Pi Engineering Honor Society
 
 - Deployed new automated conveyor system; coordinating with plant engineering, corporate technology group, and OEM.
 - Conducted package flow modeling with Excel VBA to optimize automated conveyor and improve user experience by sorting conveyor layout into equal-volume sets based on queried historical metrics.
-- Built comprehensive Jet SQL data model in MS Access, applying self-taught skills to integrate data from several disconnected databases. 
-- Transformed data from Oracle database to ID late-arriving package accounts, author report on tardy package arrival causes, then revise pickup schedules.
+- Conducted root cause analyses of service failure incidents based on data and in-field research to resolve numerous scanning and mechanical bugs in new conveyor system.
+- Built comprehensive Jet SQL data model in MS Access, applying self-taught skills to mine and integrate data from several disconnected databases and intranet sources. 
+- Transformed data from data model to ID late-arriving package accounts, author report on tardy package arrival causes, then revise pickup schedules.
 - Performed demand assessments and projections for operations planning based on historical performance data; applying statistical methods such as: linear regressions, fast Fourier transform, SMAs, std. dev., etc.
-- Conducted root cause analyses of service failure incidents based on data and in-field research to resolve numerous scanning and mechanical bugs in new conveyor system
 
 ###  Industrial Engineering Intern
 #### Uniondale, NY • 10/2017 - 02/18
