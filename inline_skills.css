@@ -1,0 +1,29 @@
+/* Inline Skill Section */
+
+.container,
+.container-child {
+    display: contents;
+}
+
+.container-child *
+{
+	padding:-1px;
+	margin:	-1px;
+}
+
+.container-child h1,
+.container-child ul {
+    display: inline-block;
+}
+
+.container-child h1::after {
+    content: ": ";
+    display:inline-block;
+    width:-1.5em;
+}
+
+.container li:last-child::after {
+    content: "";
+    display: inline-block;
+    width: 0em;
+}
