@@ -1,56 +1,61 @@
 # Objective
 
-- Results-driven engineer with experience in data analysis and process improvement seeking to enter the tech industry. Strong analytical and problem-solving skills with expertise in multiple programming languages, SQL, and data visualization. Seeking to leverage skills and experience in data-driven decision making to drive product success and monetization opportunities.
+Results-driven engineer with experience in data analysis and process improvement seeking to enter the tech industry. Strong analytical and problem-solving skills with expertise in multiple programming languages, SQL, and data visualization. Seeking to leverage skills and experience in data-driven decision making to drive product success and monetization opportunities.
 
 
 #  Education
 
 ##  B.Eng. Mechanical Engineering
 ###  Macaulay Honors College at CUNY The City College of New York
-####  NY, NY | 08/2012 - 01/2017
-- GPA: 3.50, *magna cum laude*
-- Honors: Tau Beta Pi Engineering Honor Society
+####  NY, NY • 08/2012 - 01/2017
+GPA: 3.50, *magna cum laude*
+Honors: Tau Beta Pi Engineering Honor Society
 
 
 # Experience
 
 ##  Radin Consulting, Inc.
 ###  Construction Support Coordinator, CTA Red-Purple Modernization Project
-####  Remote | 08/2020 – 02/2021
+####  Remote • 08/2020 – 02/2021
 ###  Construction Support (C.S.) Coordinator, LIRR 3rd Track Expansion Project
-####  Westbury, NY | 02/2019 - 08/2020
+####  Westbury, NY • 02/2019 - 08/2020
 
-- Designed and leveraged a graphical and visual approach to communicate complex technical ideas and performance trends to stakeholders using Excel, Power BI, and Power Query Formula Language, revealing data-based process optimization opportunities. 
-- Coordinated multi-disciplinary assortment of contractor and design teams to secure deadlines for hundreds of product/RFI reviews per month, satisfying contract and business requirements; drawing on extensive knowledge of SMEs, specs, and structure.
-- Documented and published personal organizational knowledge to facilitate more direct communication between teams, increase adherence to review guidelines, and accelerate onboarding of fellow Construction Support Service team members.
-- Built recommendation algorithm in VBA that reduced submittal distribution time from 12 to 3 min. avg. by parsing email keywords with RegEx, then applying boolean algebra according to config file.
-- Cut document management process from 10 minute to 2 minute average with VBA and JavaScript programming; scraping the web-based document system, sorting files, adding data to local database, and interfacing with ProjectWise API to upload file directories.
+- Leveraged KPI analytics to coordinate a multi-disciplinary assortment of teams and secure deadlines for hundreds of design reviews each month.
+- Designed and applied a graphical and visual approach to communicate complex technical ideas and performance trends to stakeholders using Excel, Power BI, and Power Query Formula Language, revealing data-based process optimization opportunities. 
+- Documented knowledge of design teams' structure and procedures to facilitate communication between teams, increase adherence to review procedures, and accelerate onboarding team members.
+- Built recommendation algorithm in VBA that reduced submittal distribution time from 12 to 3 min. avg. by parsing email keywords with RegEx, then applying boolean algebra per config file.
+- Cut document management process from 10 minute to 2 minute average with VBA and JavaScript programming; scraping the web-based document system, sorting files, adding data to local database, and interfacing with ProjectWise API to upload files.
 
 
 
 ##  United Parcel Service, Inc.
 ###  Industrial Engineer
-####  Melville, NY | 09/2017 - 02/2019
+####  Melville, NY • 09/2017 - 02/2019
 
-- Performed capacity/demand assessments for operations planning using basic statistical methods such as: linear regressions, fast Fourier transform, simple moving averages, standard deviation, etc.
-- Deployed automated smalls sort conveyor (activated roller belt) in coordination with local PE, corporate TSG, and OEM.
-- Conducted package flow simulation modeling with Excel VBA to optimize automated conveyor and improve operator accuracy; developing an algorithm that organized conveyor layout into equal-volume sets based on historical metrics. 
+- Built comprehensive Jet SQL data model in MS Access using self-taught skills to collect data from Oracle databases, data warehouses, and intranet sites; facilitating more complex reporting and in-depth investigations.
+- Transformed data from Oracle database to pinpoint late-arriving package accounts, authored report on tardy package arrival causes, then proposed revised pickup schedules for high-volume, local accounts as a possible solution.
+- Deployed new automated conveyor system and conducted root cause analyses based on data and in-field research to resolve numerous scanning and mechanical issues with new conveyor system; coordinating with plant engineering, corporate technology group, and OEM.
+- Improved conveyor accuracy by 170 packages per day by developing Excel VBA algorithm to organize sort layout into equal-volume sets based on monthly statistics.
+- Created Power BI dashboard to visualize real-time trailer volumes from queried scan data. 
+- Provided resources and advice to fellow industrial engineering team members regarding how to leverage technologies such as MS Excel or Access to simplify rote day-to-day activities and gain access to otherwise-hidden business insights.
+- Performed capacity/demand assessments and projections for operations planning based on historical performance data using basic statistical methods such as: linear regressions, fast Fourier transform, simple moving averages, standard deviation, etc.
+- Conducted package flow simulation modeling with Excel VBA to optimize automated conveyor and improve operator accuracy; developing an algorithm that organized conveyor layout into equal-volume sets based on historical metrics.
 - Developed operation manual for automated smalls sort including daily setup, area maintenance, safety, and staffing procedures.
 - Worked side-by-side with operators to train personnel on corporate conveyor operations methodology, safety and maintenance.
 - Collected data on, analyzed, identified root causes of, and resolved numerous scanning and mechanical conveyor system bugs.
-- Wrote SOP for and deployed new Saturday morning sort operation, working closely with hub and package operations groups.
-- Self-taught skills to build comprehensive  Jet SQL data model in MS Access, collecting data from databases, data warehouses, and intranet sites to improve understanding of corporate network and facilitate more complex reporting and investigations.
-- Authored report on tardy package arrival causes and transformed data from Oracle database and ODBC to pinpoint late-arriving package accounts, then proposed revised pickup schedules for high-volume, local accounts as a possible solution.
+- Wrote Special Operating Plan for and deployed new Saturday morning sort operation, working closely with hub and package operations groups.
+- Built comprehensive Jet SQL data model in MS Access using self-taught skills to collect data from databases, data warehouses, and intranet sites; and to improve understanding of corporate network and facilitate more complex reporting and investigations.
+- Transformed data from Oracle database to pinpoint late-arriving package accounts, authored report on tardy package arrival causes, then proposed revised pickup schedules for high-volume, local accounts as a possible solution.
+- Deployed revised pickup schedules, pushing operational peak volume back 40 minutes.
 
 
 ###  Industrial Engineering Intern
-#### Uniondale, NY | 10/2017 - 02/18
-
+#### Uniondale, NY • 10/2017 - 02/18
 
 
 ## Consolidated Edison, Inc.
 ###  Engineering Design Co-op
-####  New York, NY | 01/2016 - 12/2016
+####  New York, NY • 01/2016 - 12/2016
 
 - Managed design of $65,000 conveyor: set schedule, assigned tasks, reviewed team members' progress, etc.
 - Worked directly with in-house SMEs to develop spatial requirements for facilities planning and installation: electrical engineers in design of power supply system, structural engineers to ensure designs met corporate structural engineering standards, and internal fabrication team to determine fabrication capabilities and ensure accurate communication of design intent through drawings.
@@ -60,17 +65,23 @@
 
 
 
+#  Projects
+##  Rusyn Wordle
+
+Developed and deployed a responsive word game web-app featuring interactive game board and Cyrillic keyboard interface. The project showcases proficiency in front-end development using HTML5, JavaScript, and CSS, as well as basic back-end development and database management skills. Git was employed extensively for revision tracking and bug fixes.
+
+Rusyn Wordle implements a modular object model for all game functions, including a configurable game board class that allow adjustable board size and difficulty level. A SQL query was implemented with PHP to retrieve a single new word daily for all users across the globe from a PostgreSQL database without revealing the word list to end-users.
+
+
+##  Trumbeta.me
+
+Trumbeta.me is a Mastodon server marketed towards speakers of a minority European language. The project demonstrates technical expertise in Linux administration, shell scripting, and remote development.
+
+The project involved installing, configuring, and managing an entire Ubuntu software stack including Ruby, PostgreSQL, and nginx. The project also required utilizing scripting languages such as Bash and Ruby to automate server maintenance tasks, along with CLI tools such as systemd and crontab.
+
+
+
 # Skills
-
-## Data Analysis
-- Power Query M Language
-- MS Access
-- SQL
-- MS Excel
-
-## Data Visualization
-- PowerBI
-- Tableau
 
 ## Programming Languages
 - JavaScript
@@ -80,14 +91,19 @@
 - Microsoft Visual Basic for Applications (VBA)
 - MATLAB
 
+## Data Analysis
+- Power Query M Language
+- MS Access
+- SQL
+- MS Excel
+
 ## Technical Skills 
+- PowerShell
+- bash
 - Linux
 - git
 
-#  Projects
-##  Rusyn Wordle
-- Developed Wordle game clone in vanilla JavaScript, HTML, and CSS. Utilized PHP and very basic PostgreSQL database to handle backend provision of daily word.
 
-
-##  Trumbeta.me
-- Deployed and hosted Mastodon server for minority European language.
+## Data Visualization
+- PowerBI
+- Tableau

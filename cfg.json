@@ -1,5 +1,5 @@
 {
-	"content":	"resume_full.md",
+	"content":	"resume.md",
 	"template":	"temp.html",
 	"style":	"style.css",
 	"saveas":	"resume.html",
