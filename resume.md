@@ -1,6 +1,6 @@
 # Objective
 
-Results-driven engineer with a strong background in data analysis, user experience, and programming, seeking to transition to a formal programmer role. Alexander has demonstrated proficiency in multiple programming languages, including NodeJS, Python, C++, SQL, and VBA; as well as experience working in both Windows and \*nix environments. The {{POSITION}} at {{COMPANY_NAME}} offers the perfect opportunity to apply his abilities and understanding of user-facing and server-side development.
+Results-driven engineer with strong background in data analysis, user experience, and programming, seeking to transition to formal programmer role. Alexander has demonstrated proficiency in multiple programming languages, including NodeJS, Python, C++, SQL, and VBA; as well as experience working in both Windows and \*nix environments. The {{POSITION}} at {{COMPANY_NAME}} offers the perfect opportunity to apply both his programming abilities and skill in adapting to multi-disciplinary scenarios. 
 
 
 #  Education
@@ -15,13 +15,13 @@ Honors: Tau Beta Pi Engineering Honor Society
 # Experience
 
 ##  Radin Consulting, Inc.
-###  Construction Support Coordinator, CTA Red-Purple Modernization Project
+###  Construction Support (C.S.), CTA Red-Purple Modernization Project
 ####  Remote • 08/2020 – 02/2021
-###  Construction Support (C.S.) Coordinator, LIRR 3rd Track Expansion Project
+###  C.S. Coordinator, LIRR 3rd Track Expansion Project
 ####  Westbury, NY • 02/2019 - 08/2020
 
-- Leveraged analytics to coordinate a cross-functional assortment of teams and meet deadlines for hundreds of design reviews each month.
-- Cut document management process from 10 minute to 2 minute average with VBA and JavaScript programming thru scraping the online document system, adding data and files to local database with ProjectWise API.
+- Leveraged analytics to coordinate multi-disciplinary assortment of teams and meet deadlines for hundreds of design reviews each month.
+- Cut document management process from 10 minute to 2 minute average with VBA and JavaScript programming thru scraping online document system, adding data and files to local database with ProjectWise API.
 - Built email recipient recommendation algorithm to reduce submittal distribution time from 12 to 3 min. thru RegEx email parser and boolean algebra in config file.
 - Published personal knowledge of project structure and procedures to facilitate communication between teams, increase adherence to review procedures, and accelerate onboarding of fellow team members.
 - Leveraged Power BI and Power Query Formula Language to communicate complex ideas visually to stakeholders.
@@ -59,7 +59,7 @@ Utilizes modular object model including an extensive config file and configurabl
 ##  Trumbeta.me
 Digital Ocean-hosted Mastodon server marketed towards speakers of minority European language. Applied technical expertise in Linux administration, shell scripting, and remote development.
 
-Installed, configured, and managed entire Ubuntu software stack including Ruby, PostgreSQL,a nginx. Utilized scripting languages, e.g. Bash and Ruby, to automate server maintenance, along with CLI tools i.e. crontab.
+Installed, configured, and managed entire Ubuntu software stack including Ruby, PostgreSQL, nginx. Utilized scripting languages, e.g. Bash and Ruby, to automate server maintenance, along with CLI tools i.e. crontab.
 
 
 # Skills
@@ -73,8 +73,8 @@ Installed, configured, and managed entire Ubuntu software stack including Ruby, 
 
 ## Technical Skills 
 - PowerShell
-- bash
 - Linux
+- bash
 - git
 
 ## Data Analysis
