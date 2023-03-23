@@ -1,6 +1,6 @@
 # Objective
 
-Results-driven engineer with strong background in data analysis, process management, and programming, seeking to transition to formal programmer role. Alexander has demonstrated proficiency in multiple programming languages, including NodeJS, Python, C++, SQL, and VBA; as well as experience working in both Windows and \*nix environments. The {{POSITION}} at {{COMPANY_NAME}} offers the perfect opportunity to apply both his programming abilities and skill in adapting to multi-disciplinary scenarios. 
+Results-driven engineer with tangible experience in data analysis, process management, and programming, eager to transition to a more technical role. Alexander has thorough experience in data mining and engineering from his time as an industrial engineer at UPS, plus demonstrated proficiency in several computer languages: NodeJS, Python, C++, SQL, and VBA. He works frequently in both Windows and \*nix environments. The {{POSITION}} at {{COMPANY_NAME}} offers a perfect opportunity to apply his experiences in process management with his technical aptitude.
 
 
 #  Education
