@@ -9,10 +9,30 @@ const	cdata 		= cfg.contact;
 const   converter 	= new showdown.Converter();
 
 console.log('Importing markdown...');
-const   res  		= converter.makeHtml(fs.readFileSync(cfg.content).toString());
-const   css  		= fs.readFileSync(cfg.style).toString();
+let   res  		= converter.makeHtml(fs.readFileSync(cfg.content).toString());
+const   css  		= ((paths)=>
+{
+	let style ="";
+	for (let path of paths)
+	{
+		try 
+		{
+			style += fs.readFileSync(path).toString();
+		}
+		catch 
+		{
+			console.log(`! Style '${path}' not found.`);
+		}
+	}
+	return style;
+})(cfg.style)
 
 var html = fs.readFileSync(cfg.template).toString();
+
+// Replace Substitutions per Config File
+
+for (entry of Object.entries(cfg.substitutions) )
+	res = res.replace(`{{${entry[0]}}}`,entry[1]);
 
 console.log('Formatting html...');
 

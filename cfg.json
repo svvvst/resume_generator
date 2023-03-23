@@ -1,8 +1,14 @@
 {
-	"content":	"resume.md",
-	"template":	"temp.html",
-	"style":	"style.css",
 	"saveas":	"resume.html",
+
+	"content":	"resume.md",
+
+	"template":	"temp.html",
+	"style":
+	[
+		"style.css",
+		"inline_skills.css"
+	],
 
 	"contact": 
 	{
@@ -17,5 +23,11 @@
 	{
 		"saveas":	"resume.pdf",
 		"pagesize":	"Letter"
+	},
+
+	"substitutions":
+	{
+		"COMPANY_NAME":"Salesforce",
+		"POSITION":"Software Engineering MTS role"
 	}
 }
