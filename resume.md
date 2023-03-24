@@ -63,29 +63,3 @@ Utilizes modular object model including an extensive config file and configurabl
 Digital Ocean-hosted Mastodon server marketed towards speakers of minority European language. Applied technical expertise in Linux administration, shell scripting, and remote development.
 
 Installed, configured, and managed entire Ubuntu software stack including Ruby, PostgreSQL, nginx. Utilized scripting languages, e.g. Bash and Ruby, to automate server maintenance, along with CLI tools i.e. crontab.
-
-
-# Skills
-
-## Programming Languages
-- JavaScript/NodeJS
-- C++
-- Python (Pandas, NumPy)
-- Microsoft Visual Basic for Applications (VBA)
-- MATLAB
-
-## Technical Skills 
-- PowerShell
-- Linux
-- bash
-- git
-
-## Data Analysis
-- SQL
-- Power Query M Language
-- MS Excel
-- MS Access
-
-## Data Visualization
-- PowerBI
-- Tableau
