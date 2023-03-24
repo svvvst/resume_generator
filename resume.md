@@ -68,6 +68,9 @@ Honors: Tau Beta Pi Engineering Honor Society
 
 #  Projects
 
+##  Resume Generator
+This resume was produced using a custom NodeJS program to build, style, and manage different resume versions. Managing different versions of resumes is complicated and time-consuming, requiring management of both the content, as well as the style. The program used to generate this resume uses the Node library 'Showdown' to convert a markdown-formatted resume to HTML. This HTML is then injected into an HTML template, styled from a file specified in a JSON config, and converted to a PDF by opening/"printing" via the Puppeteer browser automation library. Different resume versions are managed with git or can be specified in the config.
+
 ##  Rusyn Wordle
 Developed and deployed responsive word game web-app featuring interactive game board and on-screen Cyrillic keyboard. Showcases proficiency in front-end development with HTML5, JavaScript, and CSS, plus basic back-end development and database management skills with PostgreSQL and PHP. Git employed extensively for revision tracking and sourcing bugs from community.
 
