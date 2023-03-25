@@ -21,35 +21,56 @@ Honors: Tau Beta Pi Engineering Honor Society
 ####  Westbury, NY • 02/2019 - 08/2020
 
 - Leveraged KPI analytics to coordinate a cross-functional assortment of teams to meet deadlines for hundreds of product/RFI reviews each month.
-- Cut document management process from 10 minute to 2 minute average with VBA and JavaScript programming; scraping the web-based document system, sorting files, adding data to local database, and interfacing with ProjectWise API to upload files.
-- Documented and published personal knowledge of project structure and procedures to facilitate communication between teams, increase adherence to review procedures, and accelerate onboarding of fellow team members.
-- Designed and leveraged ad-hoc and automated reports/visualizations in Excel, Power BI, and Power Query Formula Language, to highlight performance trends and drive data-based process optimization opportunities.
+
+##### Process Improvement
 - Built VBA recommendation algorithm that reduced submittal distribution time from 12 to 3 min. avg. by parsing email keywords with RegEx, then applying boolean algebra prescribed in config file.
-- Facilitated communication between contractors in-field and designers in-office to secure deadlines for hundreds of product/RFI reviews each month, leading to quicker resolution of field problems.
+- Cut document management process from 10 minute to 2 minute average with VBA and JavaScript programming; scraping the web-based document system, sorting files, adding data to local database, and interfacing with ProjectWise API to upload files.
 - Streamlined multi-disciplinary review by 0.8 day avg. with development and implementation of collaborative review process based on employee experience feedback.
 - Identified and resolved issues during the review process, and coordinated with various teams and contractors to do so.
-- Maintained Projectwise document database throughout project lifecycle, filing shop drawings, RFIs, and other construction-related documentation.
+
+##### Coordination & Collaboration
+- Documented and published personal knowledge of project structure and procedures to facilitate communication between teams, increase adherence to review procedures, and accelerate onboarding of fellow team members.
+- Facilitated communication between contractors in-field and designers in-office to secure deadlines for hundreds of product/RFI reviews each month, leading to quicker resolution of field problems.
 - Negotiated RFI costs with contractors at monthly meetings.
+
+##### Other
+- Designed and leveraged a graphical and visual approach to communicate complex technical ideas and performance trends to stakeholders using Excel, Power BI, and Power Query Formula Language, revealing data-based process optimization opportunities. 
+- Designed and leveraged ad-hoc and automated reports/visualizations in Excel, Power BI, and Power Query Formula Language, to highlight performance trends and drive data-based process optimization opportunities.
+- Maintained Projectwise document database throughout project lifecycle, filing shop drawings, RFIs, and other construction-related documentation.
+
 
 ##  United Parcel Service, Inc.
 ###  Industrial Engineer
 ####  Melville, NY • 09/2017 - 02/2019
 
+##### Conveyor Deployment
+- Deployed new automated conveyor system and conducted root cause analyses based on data and in-field research to resolve numerous scanning and mechanical issues with new conveyor system; coordinating with plant engineering, corporate technology group, and OEM.
+
+###### Sorting
+- Improved conveyor accuracy by 170 packages per day by developing Excel VBA algorithm to organize sort layout into equal-volume sets based on monthly statistics.
+- Optimized operator experience and improved conveyor accuracy by 170 packages per day by developing Excel VBA algorithm to organize sort layout into equal-volume sets based on monthly statistics.
+- Conducted package flow simulation modeling with Excel VBA to optimize automated conveyor and improve operator accuracy; developing an algorithm that organized conveyor layout into equal-volume sets based on historical metrics.
+###### Operations
+- Developed operation manual for automated smalls sort including daily setup, area maintenance, safety, and staffing procedures.
+- Worked side-by-side with operators to train personnel on corporate conveyor operations methodology, safety and maintenance.
+###### Failure Analysis
+- Identified root causes and resolved numerous automated scanning and mechanical issues with new conveyor system with assistance from plant engineering, corporate technology group, and OEM.
+- Collected data on, analyzed, identified root causes of, and resolved numerous scanning and mechanical conveyor system bugs.
+
+##### Data Model
 - Built comprehensive Jet SQL data model in MS Access using self-taught skills to collect data from Oracle databases, data warehouses, and intranet sites; facilitating more complex reporting and in-depth investigations.
 - Transformed data from Oracle database to pinpoint late-arriving package accounts, authored report on tardy package arrival causes, then proposed revised pickup schedules for high-volume, local accounts as a possible solution.
-- Deployed new automated conveyor system and conducted root cause analyses based on data and in-field research to resolve numerous scanning and mechanical issues with new conveyor system; coordinating with plant engineering, corporate technology group, and OEM.
-- Improved conveyor accuracy by 170 packages per day by developing Excel VBA algorithm to organize sort layout into equal-volume sets based on monthly statistics.
+- Deployed revised pickup schedules, pushing operational peak volume back 40 minutes.
+
+##### Data Analysis
+- Created Power BI dashboard to visualize real-time trailer volumes from queried scan data. 
 - Developed daily, monthly, and yearly projections based on historical service demand and past operational performance metrics, applying basic statistical analysis in the process: linear regressions, fast Fourier transform, simple moving averages, standard deviation, etc.
 - Developed daily operating plans for projected daily operation performance/staffing requirements based on basic statistical analysis of historical service demand and operational performance metrics: linear regressions, sinusoidal regressions, moving averages, standard deviation, variance, etc.
-- Created Power BI dashboard to visualize real-time trailer volumes from queried scan data. 
-- Provided resources and advice to fellow industrial engineering team members regarding how to leverage technologies such as MS Excel or Access to simplify rote day-to-day activities and gain access to otherwise-hidden business insights.
-- Deployed new automated conveyor system and conducted root cause analyses based on data and in-field research to resolve numerous scanning and mechanical issues with new conveyor system; coordinating with plant engineering, corporate technology group, and OEM.
-- Investigated service failure incidents and carried out root cause analysis, relying on scan data and personal knowledge of internal methods/processes to support operations’ in meeting operational excellence business requirements and KPIs.
-- Supported operations team regularly by responding to ad-hoc requests for coordination with other business divisions, resolution of IT or scan issues, explanation of technical aspects of UPS network, KPI reporting, etc.
-- Developed operation manual and trained team on procedures for new, automated conveyor including daily setup, area maintenance, safety, and staffing procedures.
+- Performed capacity/demand assessments and projections for operations planning based on historical performance data using basic statistical methods such as: linear regressions, fast Fourier transform, simple moving averages, standard deviation, etc.
+
+##### Other
 - Wrote and rolled out special operating plans for new Saturday sort operation, working closely with hub and package operations groups.
-- Identified root causes and resolved numerous automated scanning and mechanical issues with new conveyor system with assistance from plant engineering, corporate technology group, and OEM.
-- Optimized operator experience and improved conveyor accuracy by 170 packages per day by developing Excel VBA algorithm to organize sort layout into equal-volume sets based on monthly statistics.
+- Provided resources and advice to fellow industrial engineering team members regarding how to leverage technologies such as MS Excel or Access to simplify rote day-to-day activities and gain access to otherwise-hidden business insights.
 
 
 ###  Industrial Engineering Intern
@@ -58,7 +79,7 @@ Honors: Tau Beta Pi Engineering Honor Society
 
 ## Consolidated Edison, Inc.
 ###  Engineering Design Co-op
-####  New York, NY | 01/2016 - 12/2016
+####  New York, NY • 01/2016 - 12/2016
 - Managed design team and development of $65,000 conveyor: set schedule, assigned tasks, reviewed team members' progress, etc.
 - Conducted academic and industry research through review of publications and interviews with industry professionals to evaluate the feasibility and potential benefits of several solutions.
 - Evaluated project feasibility based on prototype design, draft bill of materials, projected costs, projected product performance, and estimated man-hours for construction.
@@ -109,40 +130,23 @@ Optimized a hypothetical Rankine Cycle in Microsoft Excel by introducing modific
 Employed finite difference and Lax methods in MATLAB to visually model vibration of string under uniform tension in 2-D (length, time).
 
 
+#  Projects
+##  Rusyn Wordle
+
+Developed and deployed a responsive word game web-app featuring interactive game board and Cyrillic keyboard interface. The project showcases proficiency in front-end development using HTML5, JavaScript, and CSS, as well as basic back-end development and database management skills. Git was employed extensively for revision tracking and bug fixes.
+
+Rusyn Wordle implements a modular object model for all game functions, including a configurable game board class that allow adjustable board size and difficulty level. A SQL query was implemented with PHP to retrieve a single new word daily for all users across the globe from a PostgreSQL database without revealing the word list to end-users.
+
+
+##  Trumbeta.me
+
+Trumbeta.me is a Mastodon server marketed towards speakers of a minority European language. The project demonstrates technical expertise in Linux administration, shell scripting, and remote development.
+
+The project involved installing, configuring, and managing an entire Ubuntu software stack including Ruby, PostgreSQL, and nginx. The project also required utilizing scripting languages such as Bash and Ruby to automate server maintenance tasks, along with CLI tools such as systemd and crontab.
+
+
+
 # Skills
-
-## Engineering Software
-- Fusion 360
-- Solidworks
-- AutoCAD Inventor
-- ANSYS Fluent
-- Solidworks Simulation FEA
-- HSMworks
-
-## Data Analysis
-- MS Excel
-- Power BI
-- Power Query M Language
-- MS Access
-- SQL
-
-## Document Management & Office Software
-- Projectwise
-- Oracle Aconex
-- MS Visio
-
-## Mechanical Design
-- 3D Printing
-- Design for Assembly (DFA)
-- Design for Manufacture (DFM)
-- sheet metal design
-- CNC
-- drafting
-- mechanism design
-
-## Data Visualization
-- PowerBI
-- Tableau
 
 ## Programming Languages
 - Microsoft Visual Basic for Applications (VBA)
@@ -151,11 +155,19 @@ Employed finite difference and Lax methods in MATLAB to visually model vibration
 - Python
 - C++
 
+## Data Analysis
+- Power Query M Language
+- MS Access
+- SQL
+- MS Excel
+
 ## Technical Skills 
 - PowerShell
 - bash
 - Linux
 - git
 
-## Language
-- Spanish (Conversational)
+
+## Data Visualization
+- PowerBI
+- Tableau
