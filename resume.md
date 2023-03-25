@@ -1,6 +1,6 @@
 # Objective
 
-Results-driven engineer with tangible experience in data analysis, process management, and programming, eager to transition to a formal programmer role. Alexander has thorough experience in data mining, management, and engineering from his time as an industrial engineer at UPS, plus demonstrated proficiency in several computer languages: NodeJS, Python, C++, SQL, and VBA. He works frequently in both Windows and \*nix environments. The {{POSITION}} at {{COMPANY_NAME}} offers a perfect opportunity to apply his experiences in process management with his technical aptitude.
+Highly flexible engineer with hands-on experience in programming, data analysis, and process improvement in fast paced environments. Eager to transition to a formal programmer. Thorough experience in data mining, management, and engineering from his time as an industrial engineer at UPS, plus demonstrated proficiency and adaptability in several computer languages: NodeJS, Python, C++, SQL, and Visual Basic for Applications. He works frequently in both Windows and \*nix environments. The {{POSITION}} at {{COMPANY_NAME}} offers a perfect opportunity to combine his experiences in process management with his technical aptitude.
 
 
 #  Education
@@ -22,9 +22,9 @@ Honors: Tau Beta Pi Engineering Honor Society
 ###  C.S. Coordinator, LIRR 3rd Track Expansion Project
 ####  Westbury, NY • 02/2019 - 08/2020
 
-- Leveraged KPI analytics to coordinate multi-disciplinary set of teams and secure deadlines for 300+ design reviews each month.
+- Leveraged KPI analytics to coordinate diverse, multi-disciplinary set of teams and secure deadlines for 300+ design reviews each month.
 - Overhauled review distribution process through application of VBA & JS automation.
-- Designed email recipient recommendation algorithm to reduce submittal distribution time for 500+ reviews from 12 to 3 min. thru RegEx email parser and boolean algebra prescribed in config file.
+- Designed etail recipient recommendation algorithm to reduce submittal distribution time for 500+ reviews from 12 to 3 min. thru RegEx email parser and boolean algebra prescribed in config file.
 - Cut document management process from 10 minute to 2 minute average for 1000+ reviews with VBA and JavaScript programming by scraping online document system, adding data and files to local database with ProjectWise API.
 - Published personal knowledge of project structure and procedures to facilitate communication between teams, increase adherence to review procedures, and accelerate onboarding of fellow team members.
 - Leveraged Power BI and Power Query Formula Language to communicate complex ideas visually to stakeholders.
@@ -35,18 +35,17 @@ Honors: Tau Beta Pi Engineering Honor Society
 ###  Industrial Engineer
 ####  Melville, NY • 09/2017 - 02/2019
 
-- Deployed new automated conveyor system; coordinating with plant engineering, corporate technology group, and OEM.
+- Deployed new automated conveyor system, coordinating with a wide range of business groups including plant engineering, corporate technology group, and OEM to understand project goals and design, then carry out operation plan development, operational integration, conveyor configuration, testing, analysis, on-time delivery, and operations support.
 - Conducted package flow modeling with Excel VBA to optimize automated conveyor and improve user experience by sorting conveyor layout into equal-volume sets based on queried historical metrics.
 - Conducted root cause analyses of service failure incidents based on data and in-field research to resolve numerous scanning and mechanical bugs in new conveyor system.
 - Improved conveyor accuracy by 170 packages/day and improved operator user experience by developing Excel/VBA package flow modeling algorithm to organize conveyor layout into equal-volume sets based on queried historical metrics.
 - Developed operation manual for automated conveyor including daily setup, area maintenance, safety, and staffing procedures.
 - Worked side-by-side with operators to train personnel on corporate conveyor operations methodology, safety and maintenance.
-
-- Built comprehensive Jet SQL data model in MS Access, applying self-taught skills to mine, cleanse, and integrate data from several disconnected databases and intranet sources. 
+- Built comprehensive Jet SQL data model in MS Access, applying self-taught skills to mine, cleanse, and integrate data from several disconnected relational databases and intranet sources. 
 - Transformed data from data model to ID late-arriving package accounts, author report on tardy package arrival causes, then revise pickup schedules.
 - Performed demand assessments and projections for operations planning based on historical performance data; applying statistical methods such as: linear regressions, fast Fourier transform, SMAs, std. dev., etc.
 - Created Power BI dashboard to visualize real-time trailer volumes from queried scan data. 
-- Provided resources and advice to fellow industrial engineering team members regarding how to leverage technologies such as MS Excel or Access to simplify rote day-to-day activities and gain access to otherwise-hidden business insights.
+- Provided knowledge, resources, tools, and advice to fellow industrial engineering team members regarding how to leverage technologies such as SQL, MS Excel, or Access to simplify rote day-to-day activities and gain access to otherwise-hidden business insights.
 
 
 ###  Industrial Engineering Intern
