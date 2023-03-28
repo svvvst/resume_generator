@@ -1,32 +1,21 @@
+const verbose = true;
+
 const fs = require('fs');
 const showdown = require('showdown');
 const cfg = require('./cfg.json');
 
 // FUNCTIONS
 
+let print = verbose? console.log : ()=>{};
+
 // dummy err handler
-function eh(err) { if(err) {return console.log(err);} }
+function eh(err) { if(err) {return print(err);} }
 
-// function getElementById(html,id)
-// {
-// 
-// 
-// 	let regexList = new RegExp( String.raw( `(?<tag1><\s*(?<eltype>\w+)\s*([^<>]*?)\sid\s*=\s*["']?(${id})["']?([^<>]*?)>)(?<innerHtml>[\w\W]*?)(</\2>)` ),'mi').exec(html);
-// 
-// 	regexList.substitute = function (subStr)
-// 	{
-// 		this.f
-// 
-// 	}.bind(regexList);
-// 
-// 	return regexList;
-// }
-
-function injectHtml(html,id,insertion)
+function injectHtml(htmlStr,id,insertion)
 {
 	let srhExp = new RegExp( String.raw`(<\s*(\w+)\s*([^<>]*?)\sid\s*=\s*["']?(${id})["']?([^<>]*?)>)([\w\W]*?)(</\2>)`,'mi');
 
-	return html.replace( srhExp, `$1${insertion}$7` ); //`<${tag}>\n${insertion}\n</${tag}>`); //`<link rel="stylesheet" href="${cfg.style}" />`); //
+	return htmlStr.replace( srhExp, `$1${insertion}$7` ); //`<${tag}>\n${insertion}\n</${tag}>`); //`<link rel="stylesheet" href="${cfg.style}" />`); //
 }
 
 function combine_styles(path_list)
@@ -40,22 +29,22 @@ function combine_styles(path_list)
 		}
 		catch 
 		{
-			console.log(`! Style '${path}' not found.`);
+			print(`! Style '${path}' not found.`);
 		}
 	}
 	return style;
 }
 
-function replace_substitutions(res,substitutionObj)
+function replace_substitutions(mdStr,substitutionObj)
 {
 	for (entry of Object.entries(substitutionObj) )
-		res = res.replace(`{{${entry[0]}}}`,entry[1]);
-	return res;
+		mdStr = mdStr.replace(`{{${entry[0]}}}`,entry[1]);
+	return mdStr;
 }
 
 // Header Formatting
 // for each property in obj, create new li tag
-function add_header(html,cdata)
+function add_header(htmlStr,cdata)
 {
 
 	let srhExp = new RegExp(String.raw`(<ul id=contact>.*?)(</ul>)`,'ms');
@@ -65,46 +54,57 @@ function add_header(html,cdata)
 		if (key == 'name') 
 		{
 			// Add Name Header
-			html = html.replace( /(id=name>.*?)(<\/)/ms,`$1${cdata.name}$2`);
+			htmlStr = htmlStr.replace( /(id=name>.*?)(<\/)/ms,`$1${cdata.name}$2`);
 			continue;  // name is not formatted as list item, ignored and used as heading
 		}
 
 		insStr = `<li>${cdata[key]}</li>`;
-		html =  html.replace(srhExp,`$1${insStr}$2`);
+		htmlStr =  htmlStr.replace(srhExp,`$1${insStr}$2`);
 
 	}
-	return html;
+	return htmlStr;
 }
 
+function buildResume(mdStr,htmlStr,cssStr,cfg)
+{
+	const   converter 	= new showdown.Converter();
+
+	print('Converting markdown...');
+	mdStr = converter.makeHtml(mdStr); // use showdown to convert md to html
+
+	print('Formatting htmlStr...');
+
+	// Header Formatting
+	// for each property in obj, create new li tag
+	htmlStr = add_header(htmlStr,cfg.contact);
+
+	// Insert converted resume content
+	htmlStr = injectHtml(htmlStr,'content',mdStr);
+
+	// Insert style
+	htmlStr = injectHtml(htmlStr,'style',cssStr);
+
+	return htmlStr;
+}
+
+function generateHtmlResume(cfg)
+{
+	const	cdata 		= cfg.contact;
+	const   cssStr  		= combine_styles(cfg.style);
+
+	print('Importing markdown...');
+	let 	mdStr		= fs.readFileSync(cfg.content).toString(); // get htmlStr template
+	let 	htmlStr 		= fs.readFileSync(cfg.template).toString(); // get htmlStr template
+
+	// Replace Substitution words per Config File
+	mdStr = replace_substitutions(mdStr,cfg.substitutions);
+
+	htmlStr = buildResume(mdStr,htmlStr,cssStr,cfg);
+
+	print('Writing file...');
+	fs.writeFile(cfg.saveas,htmlStr,eh);
+	print('htmlStr document saved to: ' + cfg.saveas);
+}
 
 // MAIN
-
-const	cdata 		= cfg.contact;
-const   converter 	= new showdown.Converter();
-const   css  		= combine_styles(cfg.style);
-
-console.log('Importing markdown...');
-
-let   	res  		= converter.makeHtml(fs.readFileSync(cfg.content).toString()); // use showdown to convert md to html
-let 	html 		= fs.readFileSync(cfg.template).toString(); // get html template
-
-
-// Replace Substitution words per Config File
-res = replace_substitutions(res,cfg.substitutions);
-
-console.log('Formatting html...');
-
-// Header Formatting
-// for each property in obj, create new li tag
-html = add_header(html,cdata);
-
-// Insert converted resume content
-html = injectHtml(html,'content',res);
-
-// Insert style
-html = injectHtml(html,'style',css);
-
-console.log("Saving html...");
-fs.writeFile(cfg.saveas,html,eh);
-console.log('html document saved to: ' + cfg.saveas);
-
+generateHtmlResume(cfg);
