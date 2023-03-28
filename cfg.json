@@ -1,13 +1,13 @@
 {
-	"saveas":	"../export/resume.html",
+	"saveas":	"export/resume.html",
 
-	"content":	"../docs/resume.md",
+	"content":	"docs/resume.md",
 
-	"template":	"../templates/temp.html",
+	"template":	"templates/temp.html",
 	"style":
 	[
-		"../templates/style.css",
-		"../templates/inline_skills.css"
+		"templates/style.css",
+		"templates/inline_skills.css"
 	],
 
 	"contact": 
@@ -21,7 +21,7 @@
 
 	"pdf": 
 	{
-		"saveas":	"../export/resume.pdf",
+		"saveas":	"export/resume.pdf",
 		"pagesize":	"Letter"
 	},
 

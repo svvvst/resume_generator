@@ -1,33 +1,42 @@
 const fs = require('fs');
 const showdown = require('showdown');
-const cfg = require('./cfg.json');
+const path = require('path');
+
+const cfg = require('../cfg.json');
+const root = path.join(__dirname,'..');
 
 // dummy err handler
 function eh(err) { if(err) {return console.log(err);} }
+
+function p(fpath) 
+{ 
+	return path.join(root,fpath);
+}
 
 const	cdata 		= cfg.contact;
 const   converter 	= new showdown.Converter();
 
 console.log('Importing markdown...');
-let   res  		= converter.makeHtml(fs.readFileSync(cfg.content).toString());
-const   css  		= ((paths)=>
+let   res  		= converter.makeHtml( fs.readFileSync( p(cfg.content) ).toString() );
+
+const   css  		= ((fpaths)=>
 {
 	let style ="";
-	for (let path of paths)
+	for (let fpath of fpaths)
 	{
 		try 
 		{
-			style += fs.readFileSync(path).toString();
+			style += fs.readFileSync( p(fpath) ).toString();
 		}
 		catch 
 		{
-			console.log(`! Style '${path}' not found.`);
+			console.log(`! Style '${fpath}' not found.`);
 		}
 	}
 	return style;
 })(cfg.style)
 
-var html = fs.readFileSync(cfg.template).toString();
+var html = fs.readFileSync( p(cfg.template)).toString();
 
 // Replace Substitutions per Config File
 
