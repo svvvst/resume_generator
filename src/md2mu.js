@@ -2,7 +2,10 @@ const verbose = true;
 
 const fs = require('fs');
 const showdown = require('showdown');
-const cfg = require('./cfg.json');
+const path = require('path');
+
+const cfg = require('../cfg.json');
+const root = path.join(__dirname,'..');
 
 // FUNCTIONS
 
@@ -11,6 +14,11 @@ let print = verbose? console.log : ()=>{};
 // dummy err handler
 function eh(err) { if(err) {return print(err);} }
 
+function p(fpath) 
+{ 
+	return path.join(root,fpath);
+}
+
 function injectHtml(htmlStr,id,insertion)
 {
 	let srhExp = new RegExp( String.raw`(<\s*(\w+)\s*([^<>]*?)\sid\s*=\s*["']?(${id})["']?([^<>]*?)>)([\w\W]*?)(</\2>)`,'mi');
@@ -18,18 +26,18 @@ function injectHtml(htmlStr,id,insertion)
 	return htmlStr.replace( srhExp, `$1${insertion}$7` ); //`<${tag}>\n${insertion}\n</${tag}>`); //`<link rel="stylesheet" href="${cfg.style}" />`); //
 }
 
-function combine_styles(path_list)
+function combine_styles(fpath_list)
 {
 	let style ="";
-	for (let path of path_list)
+	for (let fpath of fpath_list)
 	{
 		try 
 		{
-			style += fs.readFileSync(path).toString();
+			style += fs.readFileSync(p( p(fpath)) ).toString();
 		}
 		catch 
 		{
-			print(`! Style '${path}' not found.`);
+			print(`! Style '${fpath}' not found.`);
 		}
 	}
 	return style;
@@ -93,8 +101,8 @@ function generateHtmlResume(cfg)
 	const   cssStr  		= combine_styles(cfg.style);
 
 	print('Importing markdown...');
-	let 	mdStr		= fs.readFileSync(cfg.content).toString(); // get htmlStr template
-	let 	htmlStr 		= fs.readFileSync(cfg.template).toString(); // get htmlStr template
+	let 	mdStr		= fs.readFileSync(p(cfg.content)).toString(); // get htmlStr template
+	let 	htmlStr 		= fs.readFileSync(p(cfg.template)).toString(); // get htmlStr template
 
 	// Replace Substitution words per Config File
 	mdStr = replace_substitutions(mdStr,cfg.substitutions);
