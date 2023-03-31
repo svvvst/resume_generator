@@ -1,8 +1,12 @@
 {
-  "name": "resume_html",
+  "name": "ezres",
   "version": "1.0.0",
-  "description": "",
-  "main": "md2mu.js",
+	
+  "type": "module",
+
+  "bin": {
+    "ezres": "./bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +23,7 @@
   "dependencies": {
     "handlebars": "^4.7.7",
     "puppeteer": "^19.6.3",
-    "showdown": "^2.1.0"
+    "showdown": "^2.1.0",
+    "yargs": "^17.7.1"
   }
 }
