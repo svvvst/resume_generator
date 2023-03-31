@@ -1,11 +1,32 @@
+export {default_export as default};
+
 const verbose = true;
 
-const fs = require('fs');
-const showdown = require('showdown');
-const path = require('path');
+import fs from 'fs';
+import showdown from 'showdown';
+import path from 'path';
+import puppeteer from 'puppeteer';
 
-const cfg = require('../cfg.json');
-const root = path.join(__dirname,'..');
+
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const projectroot = path.join(__dirname,'..');
+
+const p = (pth)=>{ return 'file:\\\\'+path.join(projectroot,pth); }
+
+const _cfg = import( p('cfg.json'), { assert: { type: 'json' } }).then( _=>
+	{
+		return _;
+	});
+
+const cfg = async ()=>{ 
+	return import( async ()=>{p((await _cfg).config);}, { assert: { type: 'json' } } ).then(  _=>
+	{
+		return _;
+	}); 
+};
 
 // FUNCTIONS
 
@@ -14,10 +35,6 @@ let print = verbose? console.log : ()=>{};
 // dummy err handler
 function eh(err) { if(err) {return print(err);} }
 
-function p(fpath) 
-{ 
-	return path.join(root,fpath);
-}
 
 function injectHtml(htmlStr,id,insertion)
 {
@@ -33,7 +50,7 @@ function combine_styles(fpath_list)
 	{
 		try 
 		{
-			style += fs.readFileSync(p( p(fpath)) ).toString();
+			style += fs.readFileSync( p(fpath) ).toString();
 		}
 		catch 
 		{
@@ -98,7 +115,7 @@ function buildResume(mdStr,htmlStr,cssStr,cfg)
 function generateHtmlResume(cfg)
 {
 	const	cdata 		= cfg.contact;
-	const   cssStr  		= combine_styles(cfg.style);
+	const   cssStr  	= combine_styles(cfg.style);
 
 	print('Importing markdown...');
 	let 	mdStr		= fs.readFileSync(p(cfg.content)).toString(); // get htmlStr template
@@ -114,5 +131,36 @@ function generateHtmlResume(cfg)
 	print('htmlStr document saved to: ' + cfg.saveas);
 }
 
+// PDFGEN
+
+async function generatePDF(html,pdfProperties) 
+{
+  const browser = await puppeteer.launch({
+	  args: ['--no-sandbox', '--disable-setuid-sandbox'],
+  });
+  const page = await browser.newPage();
+  await page.setContent(html);
+  const pdf = await page.pdf(pdfProperties);
+
+  print('Document saved to: ' + cfg.pdf.saveas);
+  await browser.close();
+}
+
+
+
+// generatePDF( html, { path: cfg.pdf.saveas, format: 'Letter', printBackground: true });
+
+
 // MAIN
-generateHtmlResume(cfg);
+// generateHtmlResume(cfg);
+
+// Default Export Object
+
+const default_export =
+{		_cfg:	_cfg
+	,	cfg: 	cfg
+	,	build:	buildResume
+	,	toHtml:	generateHtmlResume
+	,	toPdf:	generatePDF
+	,	p
+};

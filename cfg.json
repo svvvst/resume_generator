@@ -1,33 +1,31 @@
 {
-	"saveas":	"export/resume.html",
+	"config":	"config.json"
+,	"saveas":	"export/resume.html"
 
-	"content":	"docs/resume.md",
+,	"content":	"docs/resume.md"
 
-	"template":	"templates/temp.html",
-	"style":
+,	"template":	"templates/temp.html"
+,	"style":
 	[
-		"templates/style.css",
-		"templates/inline_skills.css"
-	],
+		"templates/style.css"
+	,	"templates/inline_skills.css"
+	]
 
-	"contact": 
-	{
-		"name":		"Alexander Swyst",
-		"address":	"New York, New York",
-		"phone":	"516.474.5162",
-		"email":	"aswyst@gmail.com",
-		"web1": 	"linkedin.com/in/aswyst"
-	},
+,	"contact": 
+	{	"name":		"Alexander Swyst"
+	,	"address":	"New York, New York"
+	,	"phone":	"516.474.5162"
+	,	"email":	"aswyst@gmail.com"
+	,	"web1": 	"linkedin.com/in/aswyst"
+	}
 
-	"pdf": 
-	{
-		"saveas":	"export/resume.pdf",
-		"pagesize":	"Letter"
-	},
+,	"pdf": 
+	{	"saveas":	"export/resume.pdf"
+	,	"pagesize":	"Letter"
+	}
 
-	"substitutions":
-	{
-		"COMPANY_NAME":"Salesforce",
-		"POSITION":"Software Engineering MTS role"
+,	"substitutions":
+	{	"COMPANY_NAME":"Salesforce"
+	,	"POSITION":"Software Engineering MTS role"
 	}
 }
