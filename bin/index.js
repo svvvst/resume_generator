@@ -1,27 +1,35 @@
 #!/usr/bin/env node
 
 import yargs from 'yargs';
-import main from '../src/md2mu.mjs';
+import converter from '../src/md2mu.mjs';
 
-const cfg = main.cfg;
-
-
-function makeOptions(optionsObj)
-{
-	for (entry of obj.entries())
-	{
-		options.option(entry[0],entry[0]);	
-	}
-}
+const CONFIG = converter.CONFIG;
+const argv = yargs();
 
 // Take Command "Builder" obj and add defaults from config.
 // command options must have same names as config.
 function setDefaultsFromConfig(commandBuilder)
 {
-	for (let entry of Object.entries(commandBuilder) )
+	for (let key in commandBuilder )
 	{
-		if (cfg[entry[0]])
-			commandBuilder[entry[0]].default = cfg[entry[0]];
+		if (CONFIG[key])
+			commandBuilder[key].default = (function ()
+			{
+				// If property is a path, format properly
+				if (CONFIG['paths'][key])
+					switch (CONFIG[key].constructor.name)
+					{
+						case 'Array':
+							return CONFIG[key].map(converter.p);
+							break;
+						case 'String':
+							return converter.p(CONFIG[key]);
+						default:
+							throw new Error(`${key} is in the config.path array, but its values are not of type String or Array.`);
+					}
+				else
+					return CONFIG[key];
+			})();
 	}
 
 	return commandBuilder;
@@ -30,10 +38,10 @@ function setDefaultsFromConfig(commandBuilder)
 // argv should be same structure as config file
 function run_converter(argv)
 {
-	let resume = main.generateHtmlResume(argv);	
+	let resume = converter.toHtml(argv);	
 
 	if (argv.type === 'pdf')
-		resume = main.generatePdfResume(resume);
+		resume = converter.toPdf(resume);
 
 	return resume;
 }
@@ -85,9 +93,25 @@ const generatorBuilderObj = setDefaultsFromConfig(
 
 ,	"style": 
 	{ 	
-		alias:"s"
+		alias:"y"
 	, 	describe: "Set css style."
-	, 	type: "string"
+	, 	type: "array"
+	,	demandOption: false
+	}
+
+	,	"substitutions": 
+	{ 	
+		alias:"b"
+	, 	describe: "Substitution pairs."
+	, 	type: "object"
+	,	demandOption: false
+	}
+
+	,	"contact": 
+	{ 	
+		alias:"i"
+	, 	describe: "Substitution pairs."
+	, 	type: "object"
 	,	demandOption: false
 	}
 });
@@ -101,3 +125,6 @@ const commandsObj =
 		
 	,	handler:	run_converter
 	}
+
+argv.command(commandsObj);
+argv.parse();

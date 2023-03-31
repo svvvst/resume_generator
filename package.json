@@ -1,21 +1,17 @@
 {
   "name": "ezres",
   "version": "1.0.0",
-	
   "type": "module",
-
   "bin": {
     "ezres": "./bin/index.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "keywords": [
+    "ezr"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/svvvst/resume.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/svvvst/resume/issues"
   },

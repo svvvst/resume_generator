@@ -1,5 +1,5 @@
 {
-	"config":	"config.json"
+	"config":	"cfg.json"
 ,	"saveas":	"export/resume.html"
 
 ,	"content":	"docs/resume.md"
@@ -25,7 +25,16 @@
 	}
 
 ,	"substitutions":
-	{	"COMPANY_NAME":"Salesforce"
-	,	"POSITION":"Software Engineering MTS role"
+	{	"COMPANY_NAME":	"Salesforce"
+	,	"POSITION":		"Software Engineering MTS role"
+	}
+
+,	"paths":
+	{	"config":		true	
+	,	"saveas":		true
+	,	"content":		true
+	,	"template":		true
+	,	"style":		true
+	,	"pdf.saveas":	true
 	}
 }

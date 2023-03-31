@@ -3,44 +3,35 @@ export {default_export as default};
 const verbose = true;
 
 import fs from 'fs';
+import { join as pathJoin, dirname} from 'path';
 import showdown from 'showdown';
-import path from 'path';
 import puppeteer from 'puppeteer';
+import { pathToFileURL as u, fileURLToPath } from 'url';
 
+const __filename 	= fileURLToPath(import.meta.url);
+const __dirname 	= dirname(__filename);
+const PROJECT_ROOT 	= pathJoin(__dirname,'..');
 
-import { fileURLToPath } from 'url';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const p = (pth)=>{ return pathJoin(PROJECT_ROOT,pth); }
 
-const projectroot = path.join(__dirname,'..');
+// Import JSON Configs
+const DEFAULT_CONFIG_PATH = 'cfg.json';
+const {default:_CONFIG} = await import( u(p(DEFAULT_CONFIG_PATH)), 	{ assert: { type: 'json' }});
+const {default: CONFIG} = await import( u(p(_CONFIG.config)), 		{ assert: { type: 'json' }});
 
-const p = (pth)=>{ return 'file:\\\\'+path.join(projectroot,pth); }
-
-const _cfg = import( p('cfg.json'), { assert: { type: 'json' } }).then( _=>
-	{
-		return _;
-	});
-
-const cfg = async ()=>{ 
-	return import( async ()=>{p((await _cfg).config);}, { assert: { type: 'json' } } ).then(  _=>
-	{
-		return _;
-	}); 
-};
 
 // FUNCTIONS
 
 let print = verbose? console.log : ()=>{};
 
 // dummy err handler
-function eh(err) { if(err) {return print(err);} }
-
+function eh(err) { if(err) {console.log(err);} }
 
 function injectHtml(htmlStr,id,insertion)
 {
 	let srhExp = new RegExp( String.raw`(<\s*(\w+)\s*([^<>]*?)\sid\s*=\s*["']?(${id})["']?([^<>]*?)>)([\w\W]*?)(</\2>)`,'mi');
 
-	return htmlStr.replace( srhExp, `$1${insertion}$7` ); //`<${tag}>\n${insertion}\n</${tag}>`); //`<link rel="stylesheet" href="${cfg.style}" />`); //
+	return htmlStr.replace( srhExp, `$1${insertion}$7` ); //`<${tag}>\n${insertion}\n</${tag}>`); //`<link rel="stylesheet" href="${CONFIG.style}" />`); //
 }
 
 function combine_styles(fpath_list)
@@ -50,7 +41,7 @@ function combine_styles(fpath_list)
 	{
 		try 
 		{
-			style += fs.readFileSync( p(fpath) ).toString();
+			style += fs.readFileSync( fpath ).toString();
 		}
 		catch 
 		{
@@ -62,8 +53,8 @@ function combine_styles(fpath_list)
 
 function replace_substitutions(mdStr,substitutionObj)
 {
-	for (entry of Object.entries(substitutionObj) )
-		mdStr = mdStr.replace(`{{${entry[0]}}}`,entry[1]);
+	for (let key in substitutionObj)
+		mdStr = mdStr.replace(`{{${key}}`,substitutionObj[key]);
 	return mdStr;
 }
 
@@ -74,7 +65,7 @@ function add_header(htmlStr,cdata)
 
 	let srhExp = new RegExp(String.raw`(<ul id=contact>.*?)(</ul>)`,'ms');
 	let insStr;
-	for (key in cdata) 
+	for (let key in cdata) 
 	{
 		if (key == 'name') 
 		{
@@ -90,7 +81,7 @@ function add_header(htmlStr,cdata)
 	return htmlStr;
 }
 
-function buildResume(mdStr,htmlStr,cssStr,cfg)
+function buildResume(mdStr,htmlStr,cssStr,config)
 {
 	const   converter 	= new showdown.Converter();
 
@@ -101,7 +92,7 @@ function buildResume(mdStr,htmlStr,cssStr,cfg)
 
 	// Header Formatting
 	// for each property in obj, create new li tag
-	htmlStr = add_header(htmlStr,cfg.contact);
+	htmlStr = add_header(htmlStr,config.contact);
 
 	// Insert converted resume content
 	htmlStr = injectHtml(htmlStr,'content',mdStr);
@@ -112,23 +103,23 @@ function buildResume(mdStr,htmlStr,cssStr,cfg)
 	return htmlStr;
 }
 
-function generateHtmlResume(cfg)
+function generateHtmlResume(config)
 {
-	const	cdata 		= cfg.contact;
-	const   cssStr  	= combine_styles(cfg.style);
+	const	cdata 		= config.contact;
+	const   cssStr  	= combine_styles(config.style);
 
 	print('Importing markdown...');
-	let 	mdStr		= fs.readFileSync(p(cfg.content)).toString(); // get htmlStr template
-	let 	htmlStr 		= fs.readFileSync(p(cfg.template)).toString(); // get htmlStr template
+	let 	mdStr		= fs.readFileSync(config.content).toString(); // get htmlStr template
+	let 	htmlStr 	= fs.readFileSync(config.template).toString(); // get htmlStr template
 
 	// Replace Substitution words per Config File
-	mdStr = replace_substitutions(mdStr,cfg.substitutions);
+	mdStr = replace_substitutions(mdStr,config.substitutions);
 
-	htmlStr = buildResume(mdStr,htmlStr,cssStr,cfg);
+	htmlStr = buildResume(mdStr,htmlStr,cssStr,config);
 
 	print('Writing file...');
-	fs.writeFile(cfg.saveas,htmlStr,eh);
-	print('htmlStr document saved to: ' + cfg.saveas);
+	fs.writeFile(config.saveas,htmlStr,eh);
+	print('htmlStr document saved to: ' + config.saveas);
 }
 
 // PDFGEN
@@ -142,23 +133,13 @@ async function generatePDF(html,pdfProperties)
   await page.setContent(html);
   const pdf = await page.pdf(pdfProperties);
 
-  print('Document saved to: ' + cfg.pdf.saveas);
+  print('Document saved to: ' + CONFIG.pdf.saveas);
   await browser.close();
 }
 
-
-
-// generatePDF( html, { path: cfg.pdf.saveas, format: 'Letter', printBackground: true });
-
-
-// MAIN
-// generateHtmlResume(cfg);
-
-// Default Export Object
-
 const default_export =
-{		_cfg:	_cfg
-	,	cfg: 	cfg
+{		_CONFIG:	_CONFIG
+	,	CONFIG: 	CONFIG
 	,	build:	buildResume
 	,	toHtml:	generateHtmlResume
 	,	toPdf:	generatePDF
