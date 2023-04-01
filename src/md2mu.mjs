@@ -1,31 +1,24 @@
 export {default_export as default};
 
-const verbose = true;
-
 import fs from 'fs';
-import { join as pathJoin, dirname} from 'path';
 import showdown from 'showdown';
 import puppeteer from 'puppeteer';
-import { pathToFileURL as u, fileURLToPath } from 'url';
 
-const __filename 	= fileURLToPath(import.meta.url);
-const __dirname 	= dirname(__filename);
-const PROJECT_ROOT 	= pathJoin(__dirname,'..');
-
-const p = (pth)=>{ return pathJoin(PROJECT_ROOT,pth); }
-
-// Import JSON Configs
-const DEFAULT_CONFIG_PATH = 'cfg.json';
-const {default:_CONFIG} = await import( u(p(DEFAULT_CONFIG_PATH)), 	{ assert: { type: 'json' }});
-const {default: CONFIG} = await import( u(p(_CONFIG.config)), 		{ assert: { type: 'json' }});
+import 
+{
+	CONFIG
+,	VERBOSE
+,	pp
+,	loadJson
+,	print
+,	eh
+,	PROJECT_ROOT
+,	DEFAULT_CONFIG_PATH
+} 
+from './lib.mjs';
 
 
 // FUNCTIONS
-
-let print = verbose? console.log : ()=>{};
-
-// dummy err handler
-function eh(err) { if(err) {console.log(err);} }
 
 function injectHtml(htmlStr,id,insertion)
 {
@@ -120,6 +113,8 @@ function generateHtmlResume(config)
 	print('Writing file...');
 	fs.writeFile(config.saveas,htmlStr,eh);
 	print('htmlStr document saved to: ' + config.saveas);
+
+	return htmlStr;
 }
 
 // PDFGEN
@@ -138,10 +133,7 @@ async function generatePDF(html,pdfProperties)
 }
 
 const default_export =
-{		_CONFIG:	_CONFIG
-	,	CONFIG: 	CONFIG
-	,	build:	buildResume
-	,	toHtml:	generateHtmlResume
-	,	toPdf:	generatePDF
-	,	p
+{	build:	buildResume
+,	toHtml:	generateHtmlResume
+,	toPdf:	generatePDF
 };
