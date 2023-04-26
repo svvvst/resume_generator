@@ -112,7 +112,7 @@ function generateHtmlResume(config)
 
 	print('Writing file...');
 	fs.writeFile(config.saveas,htmlStr,eh);
-	print('htmlStr document saved to: ' + config.saveas);
+	print('htmlStr document saved to: "' + config.saveas+'"');
 
 	return htmlStr;
 }

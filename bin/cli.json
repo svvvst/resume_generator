@@ -1,0 +1,98 @@
+{"builders":
+{   "converter":
+    {	"type":
+        {	"describe":	"Type of document to generate: 'html' or 'pdf'."
+        ,	"type":	"string"
+        ,	"default":	"html"
+        ,	"demandOption":	false
+        }
+    ,	"v": 
+        { 	"alias":	    "verbose"
+        ,	"describe":	    "Set verbose."
+        ,	"type":	        "boolean"
+        ,	"default":	    false
+        ,	"demandOption":	false
+    }
+    ,	"save-options":
+        {
+        }
+
+
+    ,	"config": 
+        { 	"alias":	    "c"
+        ,	"describe":	    "Set config file."
+        ,	"type":	        "string"
+        ,	"demandOption":	false
+        }
+    ,	"saveas": 
+        { 	"alias":	    "s"
+        ,	"describe":	    "Set html save location and filename."
+        ,	"type":	        "string"
+        ,	"demandOption":	false
+        }
+
+    ,	"content": 
+        { 	"alias":        ["f","resume","file"]
+        ,	"describe":	    "Set resume markdown file."
+        ,	"type":	        "string"
+        ,	"demandOption":	false
+        }
+
+    ,	"template": 
+        { 	"alias":	    "t"
+        ,	"describe":	    "Set resume template file."
+        ,	"type":	        "string"
+        ,	"demandOption": false
+        }
+
+    ,	"style": 
+        { 	
+            "alias":	    "y"
+        , 	"describe":	    "Set css style."
+        , 	"type":	        "array"
+        ,	"demandOption":	false
+        }
+
+    ,	"contact": 
+        { 	
+            "alias":	    "i"
+        , 	"describe":	    "Substitution pairs."
+        , 	"type":	        "object"
+        ,	"demandOption":	false
+
+        ,   "name":	    {}
+        ,	"address":	{}
+        ,	"phone":	{}
+        ,	"email":	{}
+        ,	"web1":	    {}
+        }
+
+    ,	"pdf":
+        {	"alias":	    "p"
+        ,	"describe":	    "PDF object options."
+        ,	"type":	        "object"
+        ,	"demandOption":	false
+            
+        ,	"saveas":	
+            {	"alias":	"S"
+            ,	"describe":	"Save path for PDF export."
+            ,	"type":	"object"
+            ,	"demandOption":	false
+            }
+
+        ,	"pagesize":	
+            {	"describe":	"Save path for PDF export."
+            ,	"type":	"object"
+            ,	"demandOption":	false
+            }
+        }
+
+        ,	"substitutions": 
+        { 	
+            "alias":	    "b"
+        , 	"describe":	    "Substitution pairs."
+        , 	"type":	        "object"
+        ,	"demandOption":	false
+        }
+    }
+}}

@@ -2,6 +2,7 @@
   "name": "ezres",
   "version": "1.0.0",
   "type": "module",
+  "main": "./bin/index.js",
   "bin": {
     "ezres": "./bin/index.js"
   },
