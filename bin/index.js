@@ -120,8 +120,6 @@ function setDefaultsFromConfig(commandBuilder,config)
 	let root = for_tree_nodes(commandBuilder, (curr) =>
 	{
 		let key = curr.name;
-
-		console.log(key);
 		
 		if (config[key])
 			curr.obj.default = 
@@ -152,7 +150,7 @@ function setDefaultsFromConfig(commandBuilder,config)
 }
 
 // argv should be same structure as config file
-function run_converter(argv)
+function conversion_handler(argv)
 {
 	let resume = converter.toHtml(argv);	
 
@@ -166,12 +164,9 @@ const commandsObj =
 	{	command:	'gen [type] [file]'
 	,	aliases:	['$0 [type]']
 	,	describe:	'Generate html or pdf resume version.'
-	,	builder:	setDefaultsFromConfig(CLI_CONFIG.builders.converter,CONFIG)
+	,	builder:	setDefaultsFromConfig(CLI_CONFIG.builders.converter,CONFIG) // #todo save defaults to config 
 		
-	,	handler:	run_converter
+	,	handler:	conversion_handler
 	}
 
-const argv = yargs(process.argv.splice(2)).command(commandsObj).help().argv;
-
-console.log();
-
+yargs(process.argv.splice(2)).command(commandsObj).help().argv;
