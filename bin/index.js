@@ -115,9 +115,9 @@ const for_tree_nodes  = (treeRoot,fn,unlessFn) => { return new ObjectTraverser(t
 
 // Take Command "Builder" obj and add defaults from config.
 // command options must have same names as config.
-function setDefaultsFromConfig(commandBuilder,config)
+function setDefaultsFromConfig(optionsConfig,config)
 {
-	let root = for_tree_nodes(commandBuilder, (curr) =>
+	let root = for_tree_nodes(optionsConfig, (curr) =>
 	{
 		let key = curr.name;
 		

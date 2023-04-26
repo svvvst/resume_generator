@@ -1,7 +1,8 @@
 {"builders":
 {   "converter":
     {	"type":
-        {	"describe":	"Type of document to generate: 'html' or 'pdf'."
+        {	"alias":    "t"
+        ,   "describe":	"Type of document to generate: 'html' or 'pdf'."
         ,	"type":	"string"
         ,	"default":	"html"
         ,	"demandOption":	false
@@ -39,7 +40,7 @@
         }
 
     ,	"template": 
-        { 	"alias":	    "t"
+        { 	"alias":	    "m"
         ,	"describe":	    "Set resume template file."
         ,	"type":	        "string"
         ,	"demandOption": false
