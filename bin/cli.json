@@ -73,6 +73,7 @@
         ,	"describe":	    "PDF object options."
         ,	"type":	        "object"
         ,	"demandOption":	false
+        ,   "help":         true
             
         ,	"saveas":	
             {	"alias":	"S"
