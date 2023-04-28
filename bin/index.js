@@ -13,12 +13,12 @@ class Entry
 	parent;		// Node parent
 	entries;	// Node entries
 
-	constructor(name,obj,parent)
+	constructor(name=null,obj=null,parent=null)
 	{
-		return this.set(name,obj,parent);
+		return this.setme(name,obj,parent);
 	}
 
-	set(name,obj,parent)
+	setme(name=null,obj=null,parent=null)
 	{
 		this.name = name;
 		this.obj = obj;
@@ -76,15 +76,19 @@ class Entry
 }
 
 // Object traverser class
+const NULL_ENTRY = new Entry();
 class ObjectTraverser
 {
 	root;	// Root node
 
-	curr;	// Current node
-	#child;	// Child node of current node
+	parent; // Parent node
+	child;	// Child node
 
-	prev;	// Previous node
+	curr;	// Current node pointer
+	prev;	// Previously processed node pointer
 	next;	// Next node to be processed
+
+	node_is_child = false;	// Flag to indicate if current node is a child of previous node
 
 	#nodeStack;
 
@@ -92,7 +96,9 @@ class ObjectTraverser
 	{
 		// Create new entry for root
 		this.root   = new Entry(null,obj,null);
+
 		this.next = this.root;
+
 
 		this.#nodeStack = new Array();
 		this.path = new Array();
@@ -113,40 +119,45 @@ class ObjectTraverser
 		{
 			// // If unlessFn returns true, skip this parent
 			// if (unlessFn && unlessFn(this.curr)) continue; 
-			this.prev = this.curr;
-			this.curr = this.next;
+			this.prev = this.parent;
+			this.parent = this.next;
+			this.curr = this.parent;
 
-			this.path.push(this.curr.name);
+			this.path.push(this.parent.name);
 			//this.next = null;	// this.next represents next node to be processed, right now, that is unknown
 
 			// Loop over each child node
 			let curr_is_terminal = true;
-
-			for (let child_name in this.curr.obj) 
+			this.node_is_child = true;
+			for (let child_name in this.parent.obj) 
 			{ 
-				if (this.curr.obj[child_name])
+				if (this.parent.obj[child_name])
 				{
 					// Set child object
-					this.#child = new Entry(child_name,this.curr.obj[child_name],this.curr);
+					this.child = new Entry(child_name,this.parent.obj[child_name],this.parent);
 
 					// If child is an object, add it to array to be processed later.
-					if (this.#child.obj && this.#child.obj.constructor.name === 'Object')	
+					if (this.child.obj && this.child.obj.constructor.name === 'Object')	
 						{
-							this.#nodeStack.push(this.#child);
+							this.#nodeStack.push(this.child);
 							curr_is_terminal = false;
 						}
+					//else fn(this);
 				}
 			}
+			this.node_is_child = false;
+			this.child = NULL_ENTRY;
+			
 
 			// #DONE figure out why next_is_redundant is not working. this line is supposed to remove redundant nodes from the stack
 			// next_is_redundant needed to be redefined with every loop. Otherwise, value would be cached outside and not updated to true/false.
 			// Changed to function to fix this.
 			
 			// #todo move outside of loop
-			let next_is_redundant = ()=> {return this.#nodeStack.at(-1) && this.#nodeStack.at(-1).obj[this.curr.name] && (this.#nodeStack.at(-1).obj[this.curr.name] === this.curr.obj)};
+			let next_is_redundant = ()=> {return this.#nodeStack.at(-1) && this.#nodeStack.at(-1).obj[this.parent.name] && (this.#nodeStack.at(-1).obj[this.parent.name] === this.parent.obj)};
 			
 			let next_was_redundant = false;
-			while (this.#nodeStack.at(-1) === this.curr || next_is_redundant())
+			while (this.#nodeStack.at(-1) === this.parent || next_is_redundant())
 			{
 				next_was_redundant = next_is_redundant() || next_was_redundant
 				this.#nodeStack.pop();
@@ -182,26 +193,38 @@ function formatPaths(strObj,eh)
 	}
 }
 
+function getPropertyFromPath(obj,pathArr)
+{
+	for (let key of pathArr)
+		if (key)	// skip null
+			obj = obj[key];
+	
+	return obj;
+}
+
 // Set defaults for options from config
 // #wip use path property to deep copy values from config
 function setDefaultsFromConfig(optionsConfig, config) {
 	// Traverse the tree nodes
 	let root = for_tree_nodes(optionsConfig, (traverser) => {
 	  let key = traverser.curr.name;  
-  
+	  
+	  
 	  // Check if key is defined in the config and has a default value
-	  if (config[key])
-		traverser.curr.obj.default = (() => {
-		// Check if the key is in the paths array in the config
-		if (config['paths'][key])
+	  if (getPropertyFromPath(config,traverser.path)) //(config[key])
+		traverser.curr.obj.default = (() => 
 		{
-			let _eh = function (){throw new Error(`${key} is in the config.path array, but its values are not of type String or Array.`);}
-			// If so, format the path
-			return formatPaths(config[key],_eh);
-		}
-		  else
-			// Otherwise, return the value as is
-			return config[key];
+			console.log(key);
+			// Check if the key is in the paths array in the config
+			if (config['paths'][key])
+			{
+				let _eh = function (){throw new Error(`${key} is in the config.path array, but its values are not of type String or Array.`);}
+				// If so, format the path
+				return formatPaths(config[key],_eh);
+			}
+			else
+				// Otherwise, return the value as is
+				return config[key];
 		})();
   
 	}).root.obj;
