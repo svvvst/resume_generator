@@ -4,18 +4,24 @@
 		<style id="style"></style>	
 	</head>
 	<body>
-		<div id=page>
-			<div id=header>
-				<h1 id=name>
+		<div id=page data-comment="#page identifies the area to be printed by the script.">
+			<div id=header data-comment="#header indicates location where name and other personal information will be located.">
+				<h1 id=name data-comment="#name will be formatted independently from other h1 tags in the default css template.">
 				</h1>
-				<ul id=contact>
+				<ul id=contact data-comment="#contact will be populated programmatically with any contact information specified in `config_new.json`">
 				</ul>
 			</div>
-			<div id=content>
+
+			<div id=content data-comment="#content is the area where the markdown body will be injected.">
 			</div>
+
 		</div>
+
 	<script>
-		function containerize(sectionName)
+		// This script iterates through the specified section and contains the elements after that section in divs for formatting as columns in `styles.css`.
+		// #todo configure function to accept list. Maybe move to converter.mjs
+
+		(function containerize(sectionName)
 		{
 			const sectContainer = document.createElement('div');
 			sectContainer.classList.add(sectionName,'container');
@@ -32,8 +38,8 @@
 
 				sectContainer.insertAdjacentElement('beforeEnd',containerChild);                 
 			}
-		}
-		containerize('skills');
+		})('skills');
 	</script>
+	
 	</body>
 </html>

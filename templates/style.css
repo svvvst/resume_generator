@@ -1,3 +1,4 @@
+/* VARIABLES */
 :root
 {
 	--textScale:	1;
@@ -15,10 +16,11 @@
 @media print 
 {
 	:root{ 
-		--pgBorder:	none; 
+		--pgBorder:	none; /* This removes the page border that appears in-browser for printing.*/
 	}
 }
 
+/* General Formatting of Major Elements */
 body,
 #header,
 #name,
@@ -54,6 +56,9 @@ body,
     font-size:   calc(var(--textScale) * var(--textSize));
 }
 
+
+/* Headers */
+
 h1,h2,h3,h4,
 #header,
 #name, 
@@ -85,6 +90,9 @@ h3,h4
 h4
 { float:right; }
 
+
+/* Header Section Formatting */
+
 #header
 {
     display:flex;
@@ -110,17 +118,7 @@ h4
 
 }
 
-/* spacing */
-h3+h2, h4+h2, h2+h2, h3+h3, h4+h3, h4+h3+h4
-{ padding-top: 10px; }
-
-p, ul
-{
-	margin-top:0px;
-	margin-bottom:10px;
-}
-
-/* contact information */
+/* Contact Information */
 #header>ul>li
 {
 	font-size: calc(var(--headerTextSize) * var(--textScale));
@@ -128,6 +126,18 @@ p, ul
     
     text-align: right;
     flex-basis:1;
+}
+
+
+/* Document Line Spacing */
+
+h3+h2, h4+h2, h2+h2, h3+h3, h4+h3, h4+h3+h4
+{ padding-top: 10px; }
+
+p, ul
+{
+	margin-top:0px;
+	margin-bottom:10px;
 }
 
 /* Containers (skills, projects, etc.) */
@@ -143,7 +153,7 @@ p, ul
     padding: 0;
 }
 
-.container li:not(*:last-child)::after /* all bullets ex. last */
+.container li:not(*:last-child)::after /* commas after all bullets except last */
 {
     content: ', ';
 }
