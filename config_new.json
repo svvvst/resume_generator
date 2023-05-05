@@ -1,8 +1,8 @@
 {
-	"config":	"cfg.json"
+	"config":	"config_new.json"
 ,	"saveas":	"export/resume.html"
 
-,	"content":	"docs/resume.md"
+,	"content":	"../_resume_text/resume.md"
 
 ,	"template":	"templates/temp.html"
 ,	"style":
@@ -25,8 +25,8 @@
 	}
 
 ,	"substitutions":
-	{	"COMPANY_NAME":	"Salesforce"
-	,	"POSITION":		"Software Engineering MTS role"
+	{	"COMPANY_NAME":	"Deloitte"
+	,	"POSITION":		"Data Analytics Solution Consultant role"
 	}
 
 ,	"paths":

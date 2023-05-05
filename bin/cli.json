@@ -13,9 +13,12 @@
         ,	"type":	        "boolean"
         ,	"default":	    false
         ,	"demandOption":	false
-    }
-    ,	"save-options":
-        {
+        }
+    ,	"save-config":
+        {   "alias":        "save"
+        ,   "describe":     "Save current options to config."
+        ,   "type":         "boolean"
+        ,   "default":      false
         }
 
 
