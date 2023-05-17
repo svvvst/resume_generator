@@ -9,7 +9,7 @@ Options can be configured in config_new.json.
 Run the following command to clone the repository, change to the project directory, and install the required dependencies globally:
 
 ```bash
-git clone https://github.com/svvvst/resume.git && cd resume && npm install -g
+git clone https://github.com/svvvst/resume_generator.git && cd resume_generator && npm install -g
 ```
 
 
